@@ -1,0 +1,7 @@
+These two Python modules were copied, unmodified, from the user's local
+/home/birchwoodgod/github/xboxvita/recompiler directory on 2026-09-30:
+  xbe_parse.py
+  xbox_kernel_exports.py
+Repository HEAD: 4261051c6ee07784370bd21f54e1d331247254d4
+Both files were untracked in that working tree; HEAD is context, not their revision.
+The source repository's GPL-3.0 license is included as LICENSE.xboxvita.

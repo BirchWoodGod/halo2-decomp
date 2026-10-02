@@ -1,0 +1,22 @@
+*.xbe
+.tools/
+analysis/
+__pycache__/
+*.pyc
+build/
+
+# Local game assets, disc images, credentials, and editor state.
+*.iso
+*.xiso
+*.map
+*.xex
+*.pdb
+*.dmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.idea/
+.vscode/

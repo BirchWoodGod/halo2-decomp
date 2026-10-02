@@ -1,0 +1,324 @@
+{
+  "xbe_sha256": "03215919bb7163259257d361f4c7bf802a7ab12aa85e2689436369b5c427935d",
+  "source": "Instruction-reviewed custom ABI; names assigned by this project",
+  "functions": [
+    {
+      "name": "h2_data_header_init",
+      "address": "0016b650",
+      "stack_purge": 24,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "storage": "stack:4"
+        },
+        {
+          "name": "capacity",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "stride",
+          "type": "uint32",
+          "storage": "stack:12"
+        },
+        {
+          "name": "alignment_bits",
+          "type": "uint32",
+          "storage": "stack:16"
+        },
+        {
+          "name": "allocator",
+          "type": "pointer",
+          "storage": "stack:20"
+        },
+        {
+          "name": "bitmap",
+          "type": "pointer",
+          "storage": "stack:24"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_init",
+      "address": "0016b5f0",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "stack:4"
+        },
+        {
+          "name": "alignment_bits",
+          "type": "uint32",
+          "storage": "ecx"
+        },
+        {
+          "name": "stride",
+          "type": "uint32",
+          "storage": "edx"
+        },
+        {
+          "name": "capacity",
+          "type": "uint32",
+          "storage": "ebx"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "storage": "stack:8"
+        },
+        {
+          "name": "allocator",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_rebuild",
+      "address": "0016b6b0",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        },
+        {
+          "name": "capacity",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "elements",
+          "type": "pointer",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_activate",
+      "address": "0016b790",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_clear",
+      "address": "0016b7a0",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_new",
+      "address": "0016b840",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_new_handle",
+      "address": "0016b910",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        },
+        {
+          "name": "handle",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_new_at",
+      "address": "0016b990",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "edi"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_slot_init",
+      "address": "0016ba00",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        },
+        {
+          "name": "element",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_delete",
+      "address": "0016ba40",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        },
+        {
+          "name": "handle",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_get",
+      "address": "0016bae0",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        },
+        {
+          "name": "handle",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_get_index",
+      "address": "0016bb20",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_handle",
+      "address": "0016bb50",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "edx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_iterator_next",
+      "address": "0016bb70",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": [
+        {
+          "name": "iterator",
+          "type": "iterator_ptr",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_next",
+      "address": "0016bbc0",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "esi"
+        },
+        {
+          "name": "handle",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_data_find",
+      "address": "0016bc00",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "array",
+          "type": "array_ptr",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "edx"
+        }
+      ]
+    }
+  ]
+}

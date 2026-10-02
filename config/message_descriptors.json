@@ -1,0 +1,2902 @@
+{
+  "xbe_sha256": "03215919bb7163259257d361f4c7bf802a7ab12aa85e2689436369b5c427935d",
+  "functions": [
+    {
+      "group": "discovery",
+      "address": "000ac800",
+      "descriptors": [
+        {
+          "index": 0,
+          "name": "ping",
+          "words": [
+            4533344,
+            0,
+            12,
+            12,
+            705680,
+            705840,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "pong",
+          "words": [
+            4533336,
+            0,
+            12,
+            12,
+            705920,
+            706064,
+            0
+          ]
+        },
+        {
+          "index": 2,
+          "name": "broadcast-search",
+          "words": [
+            4533316,
+            0,
+            12,
+            12,
+            706160,
+            706272,
+            0
+          ]
+        },
+        {
+          "index": 3,
+          "name": "broadcast-reply",
+          "words": [
+            4533300,
+            0,
+            1824,
+            1824,
+            706352,
+            706464,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 4,
+          "size": 4,
+          "value": 4533344
+        },
+        {
+          "offset": 20,
+          "size": 4,
+          "value": 705680
+        },
+        {
+          "offset": 24,
+          "size": 4,
+          "value": 705840
+        },
+        {
+          "offset": 0,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 8,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 28,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 12,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 16,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 44,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 48,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 36,
+          "size": 4,
+          "value": 4533336
+        },
+        {
+          "offset": 40,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 52,
+          "size": 4,
+          "value": 705920
+        },
+        {
+          "offset": 56,
+          "size": 4,
+          "value": 706064
+        },
+        {
+          "offset": 60,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 32,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 76,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 80,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 68,
+          "size": 4,
+          "value": 4533316
+        },
+        {
+          "offset": 72,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 84,
+          "size": 4,
+          "value": 706160
+        },
+        {
+          "offset": 88,
+          "size": 4,
+          "value": 706272
+        },
+        {
+          "offset": 92,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 64,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 100,
+          "size": 4,
+          "value": 4533300
+        },
+        {
+          "offset": 104,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 108,
+          "size": 4,
+          "value": 1824
+        },
+        {
+          "offset": 112,
+          "size": 4,
+          "value": 1824
+        },
+        {
+          "offset": 116,
+          "size": 4,
+          "value": 706352
+        },
+        {
+          "offset": 120,
+          "size": 4,
+          "value": 706464
+        },
+        {
+          "offset": 124,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 96,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000ac800 mov dword [eax+4],452C60h",
+        "000ac807 mov dword [eax+14h],0AC490h",
+        "000ac80e mov dword [eax+18h],0AC530h",
+        "000ac815 mov byte [eax],1",
+        "000ac818 xor ecx,ecx",
+        "000ac81a mov [eax+8],ecx",
+        "000ac81d mov [eax+1Ch],ecx",
+        "000ac820 mov edx,0Ch",
+        "000ac825 mov [eax+0Ch],edx",
+        "000ac828 mov [eax+10h],edx",
+        "000ac82b mov [eax+2Ch],edx",
+        "000ac82e mov [eax+30h],edx",
+        "000ac831 mov dword [eax+24h],452C58h",
+        "000ac838 mov [eax+28h],ecx",
+        "000ac83b mov dword [eax+34h],0AC580h",
+        "000ac842 mov dword [eax+38h],0AC610h",
+        "000ac849 mov [eax+3Ch],ecx",
+        "000ac84c mov byte [eax+20h],1",
+        "000ac850 mov [eax+4Ch],edx",
+        "000ac853 mov [eax+50h],edx",
+        "000ac856 mov dword [eax+44h],452C44h",
+        "000ac85d mov [eax+48h],ecx",
+        "000ac860 mov dword [eax+54h],0AC670h",
+        "000ac867 mov dword [eax+58h],0AC6E0h",
+        "000ac86e mov [eax+5Ch],ecx",
+        "000ac871 mov byte [eax+40h],1",
+        "000ac875 mov edx,720h",
+        "000ac87a mov dword [eax+64h],452C34h",
+        "000ac881 mov [eax+68h],ecx",
+        "000ac884 mov [eax+6Ch],edx",
+        "000ac887 mov [eax+70h],edx",
+        "000ac88a mov dword [eax+74h],0AC730h",
+        "000ac891 mov dword [eax+78h],0AC7A0h",
+        "000ac898 mov [eax+7Ch],ecx",
+        "000ac89b mov byte [eax+60h],1",
+        "000ac89f ret"
+      ]
+    },
+    {
+      "group": "connection",
+      "address": "000acb10",
+      "descriptors": [
+        {
+          "index": 4,
+          "name": "connect-request",
+          "words": [
+            4533416,
+            0,
+            8,
+            8,
+            706720,
+            706816,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "name": "connect-refuse",
+          "words": [
+            4533388,
+            0,
+            8,
+            8,
+            706880,
+            706976,
+            0
+          ]
+        },
+        {
+          "index": 6,
+          "name": "connect-establish",
+          "words": [
+            4533368,
+            0,
+            8,
+            8,
+            707040,
+            707072,
+            0
+          ]
+        },
+        {
+          "index": 7,
+          "name": "connect-closed",
+          "words": [
+            4533352,
+            0,
+            12,
+            12,
+            707136,
+            707248,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 132,
+          "size": 4,
+          "value": 4533416
+        },
+        {
+          "offset": 148,
+          "size": 4,
+          "value": 706720
+        },
+        {
+          "offset": 152,
+          "size": 4,
+          "value": 706816
+        },
+        {
+          "offset": 136,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 156,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 140,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 144,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 128,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 172,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 176,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 160,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 164,
+          "size": 4,
+          "value": 4533388
+        },
+        {
+          "offset": 168,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 180,
+          "size": 4,
+          "value": 706880
+        },
+        {
+          "offset": 184,
+          "size": 4,
+          "value": 706976
+        },
+        {
+          "offset": 188,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 204,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 208,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 192,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 196,
+          "size": 4,
+          "value": 4533368
+        },
+        {
+          "offset": 200,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 212,
+          "size": 4,
+          "value": 707040
+        },
+        {
+          "offset": 216,
+          "size": 4,
+          "value": 707072
+        },
+        {
+          "offset": 220,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 224,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 228,
+          "size": 4,
+          "value": 4533352
+        },
+        {
+          "offset": 232,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 236,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 240,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 244,
+          "size": 4,
+          "value": 707136
+        },
+        {
+          "offset": 248,
+          "size": 4,
+          "value": 707248
+        },
+        {
+          "offset": 252,
+          "size": 4,
+          "value": 0
+        }
+      ],
+      "instructions": [
+        "000acb10 mov dword [eax+84h],452CA8h",
+        "000acb1a mov dword [eax+94h],0AC8A0h",
+        "000acb24 mov dword [eax+98h],0AC900h",
+        "000acb2e xor ecx,ecx",
+        "000acb30 mov [eax+88h],ecx",
+        "000acb36 mov [eax+9Ch],ecx",
+        "000acb3c mov edx,8",
+        "000acb41 mov [eax+8Ch],edx",
+        "000acb47 mov [eax+90h],edx",
+        "000acb4d push ebx",
+        "000acb4e mov bl,1",
+        "000acb50 mov [eax+80h],bl",
+        "000acb56 mov [eax+0ACh],edx",
+        "000acb5c mov [eax+0B0h],edx",
+        "000acb62 mov [eax+0A0h],bl",
+        "000acb68 mov dword [eax+0A4h],452C8Ch",
+        "000acb72 mov [eax+0A8h],ecx",
+        "000acb78 mov dword [eax+0B4h],0AC940h",
+        "000acb82 mov dword [eax+0B8h],0AC9A0h",
+        "000acb8c mov [eax+0BCh],ecx",
+        "000acb92 mov [eax+0CCh],edx",
+        "000acb98 mov [eax+0D0h],edx",
+        "000acb9e mov [eax+0C0h],bl",
+        "000acba4 mov dword [eax+0C4h],452C78h",
+        "000acbae mov [eax+0C8h],ecx",
+        "000acbb4 mov dword [eax+0D4h],0AC9E0h",
+        "000acbbe mov dword [eax+0D8h],0ACA00h",
+        "000acbc8 mov [eax+0DCh],ecx",
+        "000acbce mov edx,0Ch",
+        "000acbd3 mov [eax+0E0h],bl",
+        "000acbd9 mov dword [eax+0E4h],452C68h",
+        "000acbe3 mov [eax+0E8h],ecx",
+        "000acbe9 mov [eax+0ECh],edx",
+        "000acbef mov [eax+0F0h],edx",
+        "000acbf5 mov dword [eax+0F4h],0ACA40h",
+        "000acbff mov dword [eax+0F8h],0ACAB0h",
+        "000acc09 mov [eax+0FCh],ecx",
+        "000acc0f pop ebx",
+        "000acc10 ret"
+      ]
+    },
+    {
+      "group": "session",
+      "address": "000adab0",
+      "descriptors": [
+        {
+          "index": 8,
+          "name": "join-request",
+          "words": [
+            4533692,
+            0,
+            440,
+            440,
+            707616,
+            708512,
+            0
+          ]
+        },
+        {
+          "index": 9,
+          "name": "join-abort",
+          "words": [
+            4533680,
+            0,
+            16,
+            16,
+            709056,
+            709088,
+            0
+          ]
+        },
+        {
+          "index": 10,
+          "name": "join-refuse",
+          "words": [
+            4533668,
+            0,
+            12,
+            12,
+            709168,
+            709264,
+            0
+          ]
+        },
+        {
+          "index": 11,
+          "name": "leave-session",
+          "words": [
+            4533652,
+            0,
+            8,
+            8,
+            710048,
+            709344,
+            0
+          ]
+        },
+        {
+          "index": 12,
+          "name": "leave-acknowledge",
+          "words": [
+            4533632,
+            0,
+            8,
+            8,
+            710048,
+            709344,
+            0
+          ]
+        },
+        {
+          "index": 13,
+          "name": "session-disband",
+          "words": [
+            4533616,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 14,
+          "name": "session-boot",
+          "words": [
+            4533600,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 15,
+          "name": "host-handoff",
+          "words": [
+            4533584,
+            0,
+            46,
+            46,
+            709408,
+            709520,
+            0
+          ]
+        },
+        {
+          "index": 16,
+          "name": "peer-handoff",
+          "words": [
+            4533568,
+            0,
+            46,
+            46,
+            709408,
+            709520,
+            0
+          ]
+        },
+        {
+          "index": 17,
+          "name": "host-transition",
+          "words": [
+            4533552,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 18,
+          "name": "host-reestablish",
+          "words": [
+            4533532,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 19,
+          "name": "host-decline",
+          "words": [
+            4533516,
+            0,
+            48,
+            48,
+            709680,
+            709936,
+            0
+          ]
+        },
+        {
+          "index": 20,
+          "name": "peer-reestablish",
+          "words": [
+            4533496,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 21,
+          "name": "peer-establish",
+          "words": [
+            4533480,
+            0,
+            8,
+            8,
+            710048,
+            709616,
+            0
+          ]
+        },
+        {
+          "index": 22,
+          "name": "election",
+          "words": [
+            4533468,
+            0,
+            200,
+            200,
+            710080,
+            710416,
+            0
+          ]
+        },
+        {
+          "index": 23,
+          "name": "election-refuse",
+          "words": [
+            4533452,
+            0,
+            52,
+            52,
+            710688,
+            710864,
+            0
+          ]
+        },
+        {
+          "index": 24,
+          "name": "time-synchronize",
+          "words": [
+            4533432,
+            0,
+            28,
+            28,
+            710976,
+            711136,
+            711312
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 260,
+          "size": 4,
+          "value": 4533692
+        },
+        {
+          "offset": 276,
+          "size": 4,
+          "value": 707616
+        },
+        {
+          "offset": 280,
+          "size": 4,
+          "value": 708512
+        },
+        {
+          "offset": 264,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 284,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 268,
+          "size": 4,
+          "value": 440
+        },
+        {
+          "offset": 272,
+          "size": 4,
+          "value": 440
+        },
+        {
+          "offset": 256,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 292,
+          "size": 4,
+          "value": 4533680
+        },
+        {
+          "offset": 296,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 308,
+          "size": 4,
+          "value": 709056
+        },
+        {
+          "offset": 312,
+          "size": 4,
+          "value": 709088
+        },
+        {
+          "offset": 316,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 288,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 300,
+          "size": 4,
+          "value": 16
+        },
+        {
+          "offset": 304,
+          "size": 4,
+          "value": 16
+        },
+        {
+          "offset": 324,
+          "size": 4,
+          "value": 4533668
+        },
+        {
+          "offset": 328,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 340,
+          "size": 4,
+          "value": 709168
+        },
+        {
+          "offset": 344,
+          "size": 4,
+          "value": 709264
+        },
+        {
+          "offset": 348,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 320,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 332,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 336,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 356,
+          "size": 4,
+          "value": 4533652
+        },
+        {
+          "offset": 360,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 372,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 376,
+          "size": 4,
+          "value": 709344
+        },
+        {
+          "offset": 380,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 352,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 364,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 368,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 388,
+          "size": 4,
+          "value": 4533632
+        },
+        {
+          "offset": 392,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 396,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 400,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 404,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 408,
+          "size": 4,
+          "value": 709344
+        },
+        {
+          "offset": 412,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 384,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 420,
+          "size": 4,
+          "value": 4533616
+        },
+        {
+          "offset": 424,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 428,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 432,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 436,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 440,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 444,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 416,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 452,
+          "size": 4,
+          "value": 4533600
+        },
+        {
+          "offset": 456,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 460,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 464,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 468,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 472,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 476,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 448,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 484,
+          "size": 4,
+          "value": 4533584
+        },
+        {
+          "offset": 488,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 500,
+          "size": 4,
+          "value": 709408
+        },
+        {
+          "offset": 504,
+          "size": 4,
+          "value": 709520
+        },
+        {
+          "offset": 508,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 480,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 492,
+          "size": 4,
+          "value": 46
+        },
+        {
+          "offset": 496,
+          "size": 4,
+          "value": 46
+        },
+        {
+          "offset": 516,
+          "size": 4,
+          "value": 4533568
+        },
+        {
+          "offset": 520,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 524,
+          "size": 4,
+          "value": 46
+        },
+        {
+          "offset": 528,
+          "size": 4,
+          "value": 46
+        },
+        {
+          "offset": 532,
+          "size": 4,
+          "value": 709408
+        },
+        {
+          "offset": 536,
+          "size": 4,
+          "value": 709520
+        },
+        {
+          "offset": 540,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 512,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 556,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 560,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 552,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 572,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 548,
+          "size": 4,
+          "value": 4533552
+        },
+        {
+          "offset": 564,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 568,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 544,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 588,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 592,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 584,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 604,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 580,
+          "size": 4,
+          "value": 4533532
+        },
+        {
+          "offset": 596,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 600,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 576,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 616,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 636,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 612,
+          "size": 4,
+          "value": 4533516
+        },
+        {
+          "offset": 628,
+          "size": 4,
+          "value": 709680
+        },
+        {
+          "offset": 632,
+          "size": 4,
+          "value": 709936
+        },
+        {
+          "offset": 608,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 620,
+          "size": 4,
+          "value": 48
+        },
+        {
+          "offset": 624,
+          "size": 4,
+          "value": 48
+        },
+        {
+          "offset": 652,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 656,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 648,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 668,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 644,
+          "size": 4,
+          "value": 4533496
+        },
+        {
+          "offset": 660,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 664,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 640,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 684,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 688,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 680,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 700,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 676,
+          "size": 4,
+          "value": 4533480
+        },
+        {
+          "offset": 692,
+          "size": 4,
+          "value": 710048
+        },
+        {
+          "offset": 696,
+          "size": 4,
+          "value": 709616
+        },
+        {
+          "offset": 672,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 712,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 732,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 708,
+          "size": 4,
+          "value": 4533468
+        },
+        {
+          "offset": 724,
+          "size": 4,
+          "value": 710080
+        },
+        {
+          "offset": 728,
+          "size": 4,
+          "value": 710416
+        },
+        {
+          "offset": 704,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 716,
+          "size": 4,
+          "value": 200
+        },
+        {
+          "offset": 720,
+          "size": 4,
+          "value": 200
+        },
+        {
+          "offset": 744,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 764,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 740,
+          "size": 4,
+          "value": 4533452
+        },
+        {
+          "offset": 756,
+          "size": 4,
+          "value": 710688
+        },
+        {
+          "offset": 760,
+          "size": 4,
+          "value": 710864
+        },
+        {
+          "offset": 736,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 748,
+          "size": 4,
+          "value": 52
+        },
+        {
+          "offset": 752,
+          "size": 4,
+          "value": 52
+        },
+        {
+          "offset": 776,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 772,
+          "size": 4,
+          "value": 4533432
+        },
+        {
+          "offset": 780,
+          "size": 4,
+          "value": 28
+        },
+        {
+          "offset": 784,
+          "size": 4,
+          "value": 28
+        },
+        {
+          "offset": 788,
+          "size": 4,
+          "value": 710976
+        },
+        {
+          "offset": 792,
+          "size": 4,
+          "value": 711136
+        },
+        {
+          "offset": 796,
+          "size": 4,
+          "value": 711312
+        },
+        {
+          "offset": 768,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000adab0 push esi",
+        "000adab1 push edi",
+        "000adab2 mov dword [eax+104h],452DBCh",
+        "000adabc mov dword [eax+114h],0ACC20h",
+        "000adac6 mov dword [eax+118h],0ACFA0h",
+        "000adad0 xor ecx,ecx",
+        "000adad2 mov [eax+108h],ecx",
+        "000adad8 mov [eax+11Ch],ecx",
+        "000adade mov edx,1B8h",
+        "000adae3 mov [eax+10Ch],edx",
+        "000adae9 mov [eax+110h],edx",
+        "000adaef mov dl,1",
+        "000adaf1 mov [eax+100h],dl",
+        "000adaf7 mov dword [eax+124h],452DB0h",
+        "000adb01 mov [eax+128h],ecx",
+        "000adb07 mov dword [eax+134h],0AD1C0h",
+        "000adb11 mov dword [eax+138h],0AD1E0h",
+        "000adb1b mov [eax+13Ch],ecx",
+        "000adb21 mov [eax+120h],dl",
+        "000adb27 mov esi,10h",
+        "000adb2c mov [eax+12Ch],esi",
+        "000adb32 mov [eax+130h],esi",
+        "000adb38 mov dword [eax+144h],452DA4h",
+        "000adb42 mov [eax+148h],ecx",
+        "000adb48 mov dword [eax+154h],0AD230h",
+        "000adb52 mov dword [eax+158h],0AD290h",
+        "000adb5c mov [eax+15Ch],ecx",
+        "000adb62 mov [eax+140h],dl",
+        "000adb68 mov esi,0Ch",
+        "000adb6d mov [eax+14Ch],esi",
+        "000adb73 mov [eax+150h],esi",
+        "000adb79 mov dword [eax+164h],452D94h",
+        "000adb83 mov [eax+168h],ecx",
+        "000adb89 mov dword [eax+174h],0AD5A0h",
+        "000adb93 mov dword [eax+178h],0AD2E0h",
+        "000adb9d mov [eax+17Ch],ecx",
+        "000adba3 mov [eax+160h],dl",
+        "000adba9 mov esi,8",
+        "000adbae mov [eax+16Ch],esi",
+        "000adbb4 mov [eax+170h],esi",
+        "000adbba mov dword [eax+184h],452D80h",
+        "000adbc4 mov [eax+188h],ecx",
+        "000adbca mov [eax+18Ch],esi",
+        "000adbd0 mov [eax+190h],esi",
+        "000adbd6 mov dword [eax+194h],0AD5A0h",
+        "000adbe0 mov dword [eax+198h],0AD2E0h",
+        "000adbea mov [eax+19Ch],ecx",
+        "000adbf0 mov [eax+180h],dl",
+        "000adbf6 mov dword [eax+1A4h],452D70h",
+        "000adc00 mov [eax+1A8h],ecx",
+        "000adc06 mov [eax+1ACh],esi",
+        "000adc0c mov [eax+1B0h],esi",
+        "000adc12 mov dword [eax+1B4h],0AD5A0h",
+        "000adc1c mov dword [eax+1B8h],0AD3F0h",
+        "000adc26 mov [eax+1BCh],ecx",
+        "000adc2c mov [eax+1A0h],dl",
+        "000adc32 mov dword [eax+1C4h],452D60h",
+        "000adc3c mov [eax+1C8h],ecx",
+        "000adc42 mov [eax+1CCh],esi",
+        "000adc48 mov [eax+1D0h],esi",
+        "000adc4e mov dword [eax+1D4h],0AD5A0h",
+        "000adc58 mov dword [eax+1D8h],0AD3F0h",
+        "000adc62 mov [eax+1DCh],ecx",
+        "000adc68 mov [eax+1C0h],dl",
+        "000adc6e mov dword [eax+1E4h],452D50h",
+        "000adc78 mov [eax+1E8h],ecx",
+        "000adc7e mov dword [eax+1F4h],0AD320h",
+        "000adc88 mov dword [eax+1F8h],0AD390h",
+        "000adc92 mov [eax+1FCh],ecx",
+        "000adc98 mov [eax+1E0h],dl",
+        "000adc9e mov edi,2Eh",
+        "000adca3 mov [eax+1ECh],edi",
+        "000adca9 mov [eax+1F0h],edi",
+        "000adcaf mov dword [eax+204h],452D40h",
+        "000adcb9 mov [eax+208h],ecx",
+        "000adcbf mov [eax+20Ch],edi",
+        "000adcc5 mov [eax+210h],edi",
+        "000adccb mov dword [eax+214h],0AD320h",
+        "000adcd5 mov dword [eax+218h],0AD390h",
+        "000adcdf mov [eax+21Ch],ecx",
+        "000adce5 mov [eax+200h],dl",
+        "000adceb mov [eax+22Ch],esi",
+        "000adcf1 mov [eax+230h],esi",
+        "000adcf7 mov [eax+228h],ecx",
+        "000adcfd mov [eax+23Ch],ecx",
+        "000add03 mov dword [eax+224h],452D30h",
+        "000add0d mov dword [eax+234h],0AD5A0h",
+        "000add17 mov dword [eax+238h],0AD3F0h",
+        "000add21 mov [eax+220h],dl",
+        "000add27 mov [eax+24Ch],esi",
+        "000add2d mov [eax+250h],esi",
+        "000add33 mov [eax+248h],ecx",
+        "000add39 mov [eax+25Ch],ecx",
+        "000add3f mov dword [eax+244h],452D1Ch",
+        "000add49 mov dword [eax+254h],0AD5A0h",
+        "000add53 mov dword [eax+258h],0AD3F0h",
+        "000add5d mov [eax+240h],dl",
+        "000add63 mov [eax+268h],ecx",
+        "000add69 mov [eax+27Ch],ecx",
+        "000add6f mov dword [eax+264h],452D0Ch",
+        "000add79 mov dword [eax+274h],0AD430h",
+        "000add83 mov dword [eax+278h],0AD530h",
+        "000add8d mov [eax+260h],dl",
+        "000add93 mov edi,30h",
+        "000add98 mov [eax+26Ch],edi",
+        "000add9e mov [eax+270h],edi",
+        "000adda4 mov [eax+28Ch],esi",
+        "000addaa mov [eax+290h],esi",
+        "000addb0 mov [eax+288h],ecx",
+        "000addb6 mov [eax+29Ch],ecx",
+        "000addbc mov dword [eax+284h],452CF8h",
+        "000addc6 mov dword [eax+294h],0AD5A0h",
+        "000addd0 mov dword [eax+298h],0AD3F0h",
+        "000addda mov [eax+280h],dl",
+        "000adde0 mov [eax+2ACh],esi",
+        "000adde6 mov [eax+2B0h],esi",
+        "000addec mov [eax+2A8h],ecx",
+        "000addf2 mov [eax+2BCh],ecx",
+        "000addf8 mov dword [eax+2A4h],452CE8h",
+        "000ade02 mov dword [eax+2B4h],0AD5A0h",
+        "000ade0c mov dword [eax+2B8h],0AD3F0h",
+        "000ade16 mov [eax+2A0h],dl",
+        "000ade1c mov [eax+2C8h],ecx",
+        "000ade22 mov [eax+2DCh],ecx",
+        "000ade28 mov dword [eax+2C4h],452CDCh",
+        "000ade32 mov dword [eax+2D4h],0AD5C0h",
+        "000ade3c mov dword [eax+2D8h],0AD710h",
+        "000ade46 mov [eax+2C0h],dl",
+        "000ade4c mov esi,0C8h",
+        "000ade51 mov [eax+2CCh],esi",
+        "000ade57 mov [eax+2D0h],esi",
+        "000ade5d mov [eax+2E8h],ecx",
+        "000ade63 mov [eax+2FCh],ecx",
+        "000ade69 mov dword [eax+2E4h],452CCCh",
+        "000ade73 mov dword [eax+2F4h],0AD820h",
+        "000ade7d mov dword [eax+2F8h],0AD8D0h",
+        "000ade87 mov [eax+2E0h],dl",
+        "000ade8d mov esi,34h",
+        "000ade92 mov [eax+2ECh],esi",
+        "000ade98 mov [eax+2F0h],esi",
+        "000ade9e mov [eax+308h],ecx",
+        "000adea4 mov ecx,1Ch",
+        "000adea9 pop edi",
+        "000adeaa mov dword [eax+304h],452CB8h",
+        "000adeb4 mov [eax+30Ch],ecx",
+        "000adeba mov [eax+310h],ecx",
+        "000adec0 mov dword [eax+314h],0AD940h",
+        "000adeca mov dword [eax+318h],0AD9E0h",
+        "000aded4 mov dword [eax+31Ch],0ADA90h",
+        "000adede mov [eax+300h],dl",
+        "000adee4 pop esi",
+        "000adee5 ret"
+      ]
+    },
+    {
+      "group": "membership",
+      "address": "000af680",
+      "descriptors": [
+        {
+          "index": 25,
+          "name": "membership-update",
+          "words": [
+            4533824,
+            0,
+            18588,
+            18588,
+            712432,
+            714736,
+            0
+          ]
+        },
+        {
+          "index": 26,
+          "name": "peer-properties",
+          "words": [
+            4533808,
+            0,
+            208,
+            208,
+            716208,
+            716880,
+            0
+          ]
+        },
+        {
+          "index": 27,
+          "name": "delegate-leadership",
+          "words": [
+            4533788,
+            0,
+            44,
+            44,
+            717296,
+            717344,
+            0
+          ]
+        },
+        {
+          "index": 28,
+          "name": "boot-machine",
+          "words": [
+            4533772,
+            0,
+            44,
+            44,
+            717296,
+            717344,
+            0
+          ]
+        },
+        {
+          "index": 29,
+          "name": "player-add",
+          "words": [
+            4533760,
+            0,
+            176,
+            176,
+            717424,
+            717600,
+            0
+          ]
+        },
+        {
+          "index": 30,
+          "name": "player-refuse",
+          "words": [
+            4533744,
+            0,
+            24,
+            24,
+            717760,
+            717872,
+            0
+          ]
+        },
+        {
+          "index": 31,
+          "name": "player-remove",
+          "words": [
+            4533728,
+            0,
+            12,
+            12,
+            717968,
+            718064,
+            0
+          ]
+        },
+        {
+          "index": 32,
+          "name": "player-properties",
+          "words": [
+            4533708,
+            0,
+            164,
+            164,
+            718144,
+            718320,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 804,
+          "size": 4,
+          "value": 4533824
+        },
+        {
+          "offset": 820,
+          "size": 4,
+          "value": 712432
+        },
+        {
+          "offset": 824,
+          "size": 4,
+          "value": 714736
+        },
+        {
+          "offset": 808,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 828,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 812,
+          "size": 4,
+          "value": 18588
+        },
+        {
+          "offset": 816,
+          "size": 4,
+          "value": 18588
+        },
+        {
+          "offset": 800,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 836,
+          "size": 4,
+          "value": 4533808
+        },
+        {
+          "offset": 840,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 852,
+          "size": 4,
+          "value": 716208
+        },
+        {
+          "offset": 856,
+          "size": 4,
+          "value": 716880
+        },
+        {
+          "offset": 860,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 832,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 844,
+          "size": 4,
+          "value": 208
+        },
+        {
+          "offset": 848,
+          "size": 4,
+          "value": 208
+        },
+        {
+          "offset": 868,
+          "size": 4,
+          "value": 4533788
+        },
+        {
+          "offset": 872,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 884,
+          "size": 4,
+          "value": 717296
+        },
+        {
+          "offset": 888,
+          "size": 4,
+          "value": 717344
+        },
+        {
+          "offset": 892,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 864,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 876,
+          "size": 4,
+          "value": 44
+        },
+        {
+          "offset": 880,
+          "size": 4,
+          "value": 44
+        },
+        {
+          "offset": 908,
+          "size": 4,
+          "value": 44
+        },
+        {
+          "offset": 912,
+          "size": 4,
+          "value": 44
+        },
+        {
+          "offset": 900,
+          "size": 4,
+          "value": 4533772
+        },
+        {
+          "offset": 904,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 916,
+          "size": 4,
+          "value": 717296
+        },
+        {
+          "offset": 920,
+          "size": 4,
+          "value": 717344
+        },
+        {
+          "offset": 924,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 896,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 932,
+          "size": 4,
+          "value": 4533760
+        },
+        {
+          "offset": 936,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 948,
+          "size": 4,
+          "value": 717424
+        },
+        {
+          "offset": 952,
+          "size": 4,
+          "value": 717600
+        },
+        {
+          "offset": 956,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 928,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 940,
+          "size": 4,
+          "value": 176
+        },
+        {
+          "offset": 944,
+          "size": 4,
+          "value": 176
+        },
+        {
+          "offset": 964,
+          "size": 4,
+          "value": 4533744
+        },
+        {
+          "offset": 968,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 980,
+          "size": 4,
+          "value": 717760
+        },
+        {
+          "offset": 984,
+          "size": 4,
+          "value": 717872
+        },
+        {
+          "offset": 988,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 960,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 972,
+          "size": 4,
+          "value": 24
+        },
+        {
+          "offset": 976,
+          "size": 4,
+          "value": 24
+        },
+        {
+          "offset": 996,
+          "size": 4,
+          "value": 4533728
+        },
+        {
+          "offset": 1000,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1012,
+          "size": 4,
+          "value": 717968
+        },
+        {
+          "offset": 1016,
+          "size": 4,
+          "value": 718064
+        },
+        {
+          "offset": 1020,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 992,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1004,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 1008,
+          "size": 4,
+          "value": 12
+        },
+        {
+          "offset": 1036,
+          "size": 4,
+          "value": 164
+        },
+        {
+          "offset": 1040,
+          "size": 4,
+          "value": 164
+        },
+        {
+          "offset": 1028,
+          "size": 4,
+          "value": 4533708
+        },
+        {
+          "offset": 1032,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1044,
+          "size": 4,
+          "value": 718144
+        },
+        {
+          "offset": 1048,
+          "size": 4,
+          "value": 718320
+        },
+        {
+          "offset": 1052,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1024,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000af680 mov dword [eax+324h],452E40h",
+        "000af68a mov dword [eax+334h],0ADEF0h",
+        "000af694 mov dword [eax+338h],0AE7F0h",
+        "000af69e xor ecx,ecx",
+        "000af6a0 mov [eax+328h],ecx",
+        "000af6a6 mov [eax+33Ch],ecx",
+        "000af6ac push esi",
+        "000af6ad mov edx,489Ch",
+        "000af6b2 mov [eax+32Ch],edx",
+        "000af6b8 mov [eax+330h],edx",
+        "000af6be mov dl,1",
+        "000af6c0 mov [eax+320h],dl",
+        "000af6c6 mov dword [eax+344h],452E30h",
+        "000af6d0 mov [eax+348h],ecx",
+        "000af6d6 mov dword [eax+354h],0AEDB0h",
+        "000af6e0 mov dword [eax+358h],0AF050h",
+        "000af6ea mov [eax+35Ch],ecx",
+        "000af6f0 mov [eax+340h],dl",
+        "000af6f6 mov esi,0D0h",
+        "000af6fb mov [eax+34Ch],esi",
+        "000af701 mov [eax+350h],esi",
+        "000af707 mov dword [eax+364h],452E1Ch",
+        "000af711 mov [eax+368h],ecx",
+        "000af717 mov dword [eax+374h],0AF1F0h",
+        "000af721 mov dword [eax+378h],0AF220h",
+        "000af72b mov [eax+37Ch],ecx",
+        "000af731 mov [eax+360h],dl",
+        "000af737 mov esi,2Ch",
+        "000af73c mov [eax+36Ch],esi",
+        "000af742 mov [eax+370h],esi",
+        "000af748 mov [eax+38Ch],esi",
+        "000af74e mov [eax+390h],esi",
+        "000af754 mov dword [eax+384h],452E0Ch",
+        "000af75e mov [eax+388h],ecx",
+        "000af764 mov dword [eax+394h],0AF1F0h",
+        "000af76e mov dword [eax+398h],0AF220h",
+        "000af778 mov [eax+39Ch],ecx",
+        "000af77e mov [eax+380h],dl",
+        "000af784 mov dword [eax+3A4h],452E00h",
+        "000af78e mov [eax+3A8h],ecx",
+        "000af794 mov dword [eax+3B4h],0AF270h",
+        "000af79e mov dword [eax+3B8h],0AF320h",
+        "000af7a8 mov [eax+3BCh],ecx",
+        "000af7ae mov [eax+3A0h],dl",
+        "000af7b4 mov esi,0B0h",
+        "000af7b9 mov [eax+3ACh],esi",
+        "000af7bf mov [eax+3B0h],esi",
+        "000af7c5 mov dword [eax+3C4h],452DF0h",
+        "000af7cf mov [eax+3C8h],ecx",
+        "000af7d5 mov dword [eax+3D4h],0AF3C0h",
+        "000af7df mov dword [eax+3D8h],0AF430h",
+        "000af7e9 mov [eax+3DCh],ecx",
+        "000af7ef mov [eax+3C0h],dl",
+        "000af7f5 mov esi,18h",
+        "000af7fa mov [eax+3CCh],esi",
+        "000af800 mov [eax+3D0h],esi",
+        "000af806 mov dword [eax+3E4h],452DE0h",
+        "000af810 mov [eax+3E8h],ecx",
+        "000af816 mov dword [eax+3F4h],0AF490h",
+        "000af820 mov dword [eax+3F8h],0AF4F0h",
+        "000af82a mov [eax+3FCh],ecx",
+        "000af830 mov [eax+3E0h],dl",
+        "000af836 mov esi,0Ch",
+        "000af83b mov [eax+3ECh],esi",
+        "000af841 mov [eax+3F0h],esi",
+        "000af847 mov esi,0A4h",
+        "000af84c mov [eax+40Ch],esi",
+        "000af852 mov [eax+410h],esi",
+        "000af858 mov dword [eax+404h],452DCCh",
+        "000af862 mov [eax+408h],ecx",
+        "000af868 mov dword [eax+414h],0AF540h",
+        "000af872 mov dword [eax+418h],0AF5F0h",
+        "000af87c mov [eax+41Ch],ecx",
+        "000af882 mov [eax+400h],dl",
+        "000af888 pop esi",
+        "000af889 ret"
+      ]
+    },
+    {
+      "group": "parameters",
+      "address": "000b2220",
+      "descriptors": [
+        {
+          "index": 33,
+          "name": "parameters-update",
+          "words": [
+            4533900,
+            0,
+            5336,
+            5336,
+            718992,
+            723200,
+            0
+          ]
+        },
+        {
+          "index": 34,
+          "name": "parameters-request",
+          "words": [
+            4533864,
+            0,
+            1436,
+            1436,
+            726176,
+            728192,
+            0
+          ]
+        },
+        {
+          "index": 35,
+          "name": "countdown-timer",
+          "words": [
+            4533884,
+            0,
+            32,
+            32,
+            729040,
+            729280,
+            0
+          ]
+        },
+        {
+          "index": 36,
+          "name": "mode-acknowledge",
+          "words": [
+            4533844,
+            0,
+            16,
+            16,
+            729408,
+            729520,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 1060,
+          "size": 4,
+          "value": 4533900
+        },
+        {
+          "offset": 1076,
+          "size": 4,
+          "value": 718992
+        },
+        {
+          "offset": 1080,
+          "size": 4,
+          "value": 723200
+        },
+        {
+          "offset": 1064,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1084,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1068,
+          "size": 4,
+          "value": 5336
+        },
+        {
+          "offset": 1072,
+          "size": 4,
+          "value": 5336
+        },
+        {
+          "offset": 1056,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1092,
+          "size": 4,
+          "value": 4533864
+        },
+        {
+          "offset": 1096,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1108,
+          "size": 4,
+          "value": 726176
+        },
+        {
+          "offset": 1112,
+          "size": 4,
+          "value": 728192
+        },
+        {
+          "offset": 1116,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1088,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1100,
+          "size": 4,
+          "value": 1436
+        },
+        {
+          "offset": 1104,
+          "size": 4,
+          "value": 1436
+        },
+        {
+          "offset": 1124,
+          "size": 4,
+          "value": 4533884
+        },
+        {
+          "offset": 1128,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1140,
+          "size": 4,
+          "value": 729040
+        },
+        {
+          "offset": 1144,
+          "size": 4,
+          "value": 729280
+        },
+        {
+          "offset": 1148,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1120,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1132,
+          "size": 4,
+          "value": 32
+        },
+        {
+          "offset": 1136,
+          "size": 4,
+          "value": 32
+        },
+        {
+          "offset": 1164,
+          "size": 4,
+          "value": 16
+        },
+        {
+          "offset": 1168,
+          "size": 4,
+          "value": 16
+        },
+        {
+          "offset": 1156,
+          "size": 4,
+          "value": 4533844
+        },
+        {
+          "offset": 1160,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1172,
+          "size": 4,
+          "value": 729408
+        },
+        {
+          "offset": 1176,
+          "size": 4,
+          "value": 729520
+        },
+        {
+          "offset": 1180,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1152,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000b2220 mov dword [eax+424h],452E8Ch",
+        "000b222a mov dword [eax+434h],0AF890h",
+        "000b2234 mov dword [eax+438h],0B0900h",
+        "000b223e xor ecx,ecx",
+        "000b2240 mov [eax+428h],ecx",
+        "000b2246 mov [eax+43Ch],ecx",
+        "000b224c mov edx,14D8h",
+        "000b2251 mov [eax+42Ch],edx",
+        "000b2257 mov [eax+430h],edx",
+        "000b225d push esi",
+        "000b225e mov dl,1",
+        "000b2260 mov [eax+420h],dl",
+        "000b2266 mov dword [eax+444h],452E68h",
+        "000b2270 mov [eax+448h],ecx",
+        "000b2276 mov dword [eax+454h],0B14A0h",
+        "000b2280 mov dword [eax+458h],0B1C80h",
+        "000b228a mov [eax+45Ch],ecx",
+        "000b2290 mov [eax+440h],dl",
+        "000b2296 mov esi,59Ch",
+        "000b229b mov [eax+44Ch],esi",
+        "000b22a1 mov [eax+450h],esi",
+        "000b22a7 mov dword [eax+464h],452E7Ch",
+        "000b22b1 mov [eax+468h],ecx",
+        "000b22b7 mov dword [eax+474h],0B1FD0h",
+        "000b22c1 mov dword [eax+478h],0B20C0h",
+        "000b22cb mov [eax+47Ch],ecx",
+        "000b22d1 mov [eax+460h],dl",
+        "000b22d7 mov esi,20h",
+        "000b22dc mov [eax+46Ch],esi",
+        "000b22e2 mov [eax+470h],esi",
+        "000b22e8 mov esi,10h",
+        "000b22ed mov [eax+48Ch],esi",
+        "000b22f3 mov [eax+490h],esi",
+        "000b22f9 mov dword [eax+484h],452E54h",
+        "000b2303 mov [eax+488h],ecx",
+        "000b2309 mov dword [eax+494h],0B2140h",
+        "000b2313 mov dword [eax+498h],0B21B0h",
+        "000b231d mov [eax+49Ch],ecx",
+        "000b2323 mov [eax+480h],dl",
+        "000b2329 pop esi",
+        "000b232a ret"
+      ]
+    },
+    {
+      "group": "simulation",
+      "address": "000b2680",
+      "descriptors": [
+        {
+          "index": 37,
+          "name": "view-establishment",
+          "words": [
+            4533940,
+            0,
+            8,
+            8,
+            730176,
+            730336,
+            0
+          ]
+        },
+        {
+          "index": 38,
+          "name": "player-acknowledge",
+          "words": [
+            4533920,
+            0,
+            200,
+            200,
+            730448,
+            730624,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 1188,
+          "size": 4,
+          "value": 4533940
+        },
+        {
+          "offset": 1204,
+          "size": 4,
+          "value": 730176
+        },
+        {
+          "offset": 1208,
+          "size": 4,
+          "value": 730336
+        },
+        {
+          "offset": 1184,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1196,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 1200,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 1192,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1212,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1220,
+          "size": 4,
+          "value": 4533920
+        },
+        {
+          "offset": 1224,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1228,
+          "size": 4,
+          "value": 200
+        },
+        {
+          "offset": 1232,
+          "size": 4,
+          "value": 200
+        },
+        {
+          "offset": 1236,
+          "size": 4,
+          "value": 730448
+        },
+        {
+          "offset": 1240,
+          "size": 4,
+          "value": 730624
+        },
+        {
+          "offset": 1244,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1216,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000b2680 mov dword [eax+4A4h],452EB4h",
+        "000b268a mov dword [eax+4B4h],0B2440h",
+        "000b2694 mov dword [eax+4B8h],0B24E0h",
+        "000b269e mov byte [eax+4A0h],1",
+        "000b26a5 mov edx,8",
+        "000b26aa mov [eax+4ACh],edx",
+        "000b26b0 mov [eax+4B0h],edx",
+        "000b26b6 xor ecx,ecx",
+        "000b26b8 mov [eax+4A8h],ecx",
+        "000b26be mov [eax+4BCh],ecx",
+        "000b26c4 mov edx,0C8h",
+        "000b26c9 mov dword [eax+4C4h],452EA0h",
+        "000b26d3 mov [eax+4C8h],ecx",
+        "000b26d9 mov [eax+4CCh],edx",
+        "000b26df mov [eax+4D0h],edx",
+        "000b26e5 mov dword [eax+4D4h],0B2550h",
+        "000b26ef mov dword [eax+4D8h],0B2600h",
+        "000b26f9 mov [eax+4DCh],ecx",
+        "000b26ff mov byte [eax+4C0h],1",
+        "000b2706 ret"
+      ]
+    },
+    {
+      "group": "synchronous",
+      "address": "000b2b30",
+      "descriptors": [
+        {
+          "index": 39,
+          "name": "synchronous-update",
+          "words": [
+            4534024,
+            0,
+            16456,
+            16456,
+            730896,
+            730928,
+            730992
+          ]
+        },
+        {
+          "index": 40,
+          "name": "synchronous-actions",
+          "words": [
+            4534004,
+            0,
+            384,
+            384,
+            731024,
+            731232,
+            731424
+          ]
+        },
+        {
+          "index": 41,
+          "name": "synchronous-join",
+          "words": [
+            4533984,
+            0,
+            4,
+            4,
+            731520,
+            731552,
+            0
+          ]
+        },
+        {
+          "index": 42,
+          "name": "synchronous-gamestate",
+          "words": [
+            4533960,
+            1,
+            8,
+            65535,
+            731616,
+            731792,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 1252,
+          "size": 4,
+          "value": 4534024
+        },
+        {
+          "offset": 1268,
+          "size": 4,
+          "value": 730896
+        },
+        {
+          "offset": 1272,
+          "size": 4,
+          "value": 730928
+        },
+        {
+          "offset": 1276,
+          "size": 4,
+          "value": 730992
+        },
+        {
+          "offset": 1260,
+          "size": 4,
+          "value": 16456
+        },
+        {
+          "offset": 1264,
+          "size": 4,
+          "value": 16456
+        },
+        {
+          "offset": 1256,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1248,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1284,
+          "size": 4,
+          "value": 4534004
+        },
+        {
+          "offset": 1288,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1292,
+          "size": 4,
+          "value": 384
+        },
+        {
+          "offset": 1296,
+          "size": 4,
+          "value": 384
+        },
+        {
+          "offset": 1300,
+          "size": 4,
+          "value": 731024
+        },
+        {
+          "offset": 1304,
+          "size": 4,
+          "value": 731232
+        },
+        {
+          "offset": 1308,
+          "size": 4,
+          "value": 731424
+        },
+        {
+          "offset": 1280,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1316,
+          "size": 4,
+          "value": 4533984
+        },
+        {
+          "offset": 1320,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1324,
+          "size": 4,
+          "value": 4
+        },
+        {
+          "offset": 1328,
+          "size": 4,
+          "value": 4
+        },
+        {
+          "offset": 1332,
+          "size": 4,
+          "value": 731520
+        },
+        {
+          "offset": 1336,
+          "size": 4,
+          "value": 731552
+        },
+        {
+          "offset": 1340,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1312,
+          "size": 1,
+          "value": 1
+        },
+        {
+          "offset": 1348,
+          "size": 4,
+          "value": 4533960
+        },
+        {
+          "offset": 1352,
+          "size": 4,
+          "value": 1
+        },
+        {
+          "offset": 1356,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 1360,
+          "size": 4,
+          "value": 65535
+        },
+        {
+          "offset": 1364,
+          "size": 4,
+          "value": 731616
+        },
+        {
+          "offset": 1368,
+          "size": 4,
+          "value": 731792
+        },
+        {
+          "offset": 1372,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1344,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000b2b30 mov dword [eax+4E4h],452F08h",
+        "000b2b3a mov dword [eax+4F4h],0B2710h",
+        "000b2b44 mov dword [eax+4F8h],0B2730h",
+        "000b2b4e mov dword [eax+4FCh],0B2770h",
+        "000b2b58 mov ecx,4048h",
+        "000b2b5d mov [eax+4ECh],ecx",
+        "000b2b63 mov [eax+4F0h],ecx",
+        "000b2b69 xor edx,edx",
+        "000b2b6b mov [eax+4E8h],edx",
+        "000b2b71 mov ecx,1",
+        "000b2b76 mov [eax+4E0h],cl",
+        "000b2b7c mov dword [eax+504h],452EF4h",
+        "000b2b86 mov [eax+508h],edx",
+        "000b2b8c mov dword [eax+50Ch],180h",
+        "000b2b96 mov dword [eax+510h],180h",
+        "000b2ba0 mov dword [eax+514h],0B2790h",
+        "000b2baa mov dword [eax+518h],0B2860h",
+        "000b2bb4 mov dword [eax+51Ch],0B2920h",
+        "000b2bbe mov [eax+500h],cl",
+        "000b2bc4 mov dword [eax+524h],452EE0h",
+        "000b2bce mov [eax+528h],edx",
+        "000b2bd4 mov dword [eax+52Ch],4",
+        "000b2bde mov dword [eax+530h],4",
+        "000b2be8 mov dword [eax+534h],0B2980h",
+        "000b2bf2 mov dword [eax+538h],0B29A0h",
+        "000b2bfc mov [eax+53Ch],edx",
+        "000b2c02 mov [eax+520h],cl",
+        "000b2c08 mov dword [eax+544h],452EC8h",
+        "000b2c12 mov [eax+548h],ecx",
+        "000b2c18 mov dword [eax+54Ch],8",
+        "000b2c22 mov dword [eax+550h],0FFFFh",
+        "000b2c2c mov dword [eax+554h],0B29E0h",
+        "000b2c36 mov dword [eax+558h],0B2A90h",
+        "000b2c40 mov [eax+55Ch],edx",
+        "000b2c46 mov [eax+540h],cl",
+        "000b2c4c ret"
+      ]
+    },
+    {
+      "group": "results",
+      "address": "000b2cc0",
+      "descriptors": [
+        {
+          "index": 43,
+          "name": "game-results",
+          "words": [
+            4534044,
+            0,
+            20408,
+            20408,
+            732240,
+            732288,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 1380,
+          "size": 4,
+          "value": 4534044
+        },
+        {
+          "offset": 1384,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1388,
+          "size": 4,
+          "value": 20408
+        },
+        {
+          "offset": 1392,
+          "size": 4,
+          "value": 20408
+        },
+        {
+          "offset": 1396,
+          "size": 4,
+          "value": 732240
+        },
+        {
+          "offset": 1400,
+          "size": 4,
+          "value": 732288
+        },
+        {
+          "offset": 1404,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1376,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000b2cc0 xor edx,edx",
+        "000b2cc2 mov ecx,4FB8h",
+        "000b2cc7 mov dword [eax+564h],452F1Ch",
+        "000b2cd1 mov [eax+568h],edx",
+        "000b2cd7 mov [eax+56Ch],ecx",
+        "000b2cdd mov [eax+570h],ecx",
+        "000b2ce3 mov dword [eax+574h],0B2C50h",
+        "000b2ced mov dword [eax+578h],0B2C80h",
+        "000b2cf7 mov [eax+57Ch],edx",
+        "000b2cfd mov byte [eax+560h],1",
+        "000b2d04 ret"
+      ]
+    },
+    {
+      "group": "test",
+      "address": "000b2de0",
+      "descriptors": [
+        {
+          "index": 44,
+          "name": "test",
+          "words": [
+            4534060,
+            0,
+            8,
+            8,
+            732432,
+            732576,
+            0
+          ]
+        }
+      ],
+      "writes": [
+        {
+          "offset": 1412,
+          "size": 4,
+          "value": 4534060
+        },
+        {
+          "offset": 1416,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1420,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 1424,
+          "size": 4,
+          "value": 8
+        },
+        {
+          "offset": 1428,
+          "size": 4,
+          "value": 732432
+        },
+        {
+          "offset": 1432,
+          "size": 4,
+          "value": 732576
+        },
+        {
+          "offset": 1436,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "offset": 1408,
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "instructions": [
+        "000b2de0 xor edx,edx",
+        "000b2de2 mov ecx,8",
+        "000b2de7 mov dword [eax+584h],452F2Ch",
+        "000b2df1 mov [eax+588h],edx",
+        "000b2df7 mov [eax+58Ch],ecx",
+        "000b2dfd mov [eax+590h],ecx",
+        "000b2e03 mov dword [eax+594h],0B2D10h",
+        "000b2e0d mov dword [eax+598h],0B2DA0h",
+        "000b2e17 mov [eax+59Ch],edx",
+        "000b2e1d mov byte [eax+580h],1",
+        "000b2e24 ret"
+      ]
+    }
+  ]
+}
