@@ -5349,6 +5349,1899 @@
         }
       ],
       "return_storage": "xmm0"
+    },
+    {
+      "name": "h2_network_connection_flags_valid",
+      "address": "000880b0",
+      "source": "src/network_accept_helpers.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "flags",
+          "type": "uint32",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_copy_address",
+      "address": "00075930",
+      "source": "src/network_accept_helpers.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "address20",
+          "type": "pointer",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_address_equal",
+      "address": "0007af80",
+      "source": "src/network_accept_helpers.c",
+      "stack_purge": 8,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "first",
+          "type": "pointer",
+          "storage": "ebx"
+        },
+        {
+          "name": "second",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "compare_port",
+          "type": "byte",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_identity_resolve",
+      "address": "0007ab60",
+      "source": "src/network_identity_resolve.c",
+      "stack_purge": 16,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "address",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "direct",
+          "type": "uint32",
+          "storage": "edx"
+        },
+        {
+          "name": "index4",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "key8",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "metadata16",
+          "type": "pointer",
+          "storage": "stack:12"
+        },
+        {
+          "name": "identity36",
+          "type": "pointer",
+          "storage": "stack:16"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_accept",
+      "address": "00088360",
+      "source": "src/network_connection_accept.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "remote_id",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_send_accept",
+      "address": "00089180",
+      "source": "src/network_connection_accept.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "reliable",
+          "type": "byte",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_handle_request",
+      "address": "000785d0",
+      "source": "src/network_observer_request.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "address",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "request8",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_rebuild_connections",
+      "address": "00078900",
+      "source": "src/network_observer_rebuild.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_get_metrics",
+      "address": "00078a10",
+      "source": "src/network_observer_metrics.c",
+      "stack_purge": 16,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "ecx"
+        },
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "edx"
+        },
+        {
+          "name": "metric4",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "rate4",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "sample4",
+          "type": "pointer",
+          "storage": "stack:12"
+        },
+        {
+          "name": "ratio4",
+          "type": "pointer",
+          "storage": "stack:16"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_apply_rate",
+      "address": "00079600",
+      "source": "src/network_observer_metrics.c",
+      "stack_purge": 8,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "rate",
+          "type": "float32",
+          "storage": "xmm5"
+        },
+        {
+          "name": "budget",
+          "type": "uint32",
+          "storage": "stack:4"
+        },
+        {
+          "name": "burst",
+          "type": "uint32",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_allocate_bandwidth",
+      "address": "00078e60",
+      "source": "src/network_observer_bandwidth_allocate.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_reset_probe",
+      "address": "00079d90",
+      "source": "src/network_observer_probe.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_restore_probe",
+      "address": "0007a110",
+      "source": "src/network_observer_probe.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_probe_priority",
+      "address": "0007a2a0",
+      "source": "src/network_observer_probe.c",
+      "stack_purge": 0,
+      "returns": "float32",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ],
+      "return_storage": "xmm0"
+    },
+    {
+      "name": "h2_network_observer_reduce_peer",
+      "address": "00079a10",
+      "source": "src/network_observer_reduce.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_reduce_bandwidth",
+      "address": "00079c00",
+      "source": "src/network_observer_reduce.c",
+      "stack_purge": 8,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "stack:4"
+        },
+        {
+          "name": "propagate",
+          "type": "byte",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_measure_rate_a",
+      "address": "00079560",
+      "source": "src/network_observer_probe_result.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_measure_rate_b",
+      "address": "000795b0",
+      "source": "src/network_observer_probe_result.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_probe_failure",
+      "address": "0007a160",
+      "source": "src/network_observer_probe_result.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "edi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_probe_result",
+      "address": "0007a1c0",
+      "source": "src/network_observer_probe_result.c",
+      "stack_purge": 4,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ebx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_start_probe",
+      "address": "00079de0",
+      "source": "src/network_observer_probe_start.c",
+      "stack_purge": 8,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "edi"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "stack:4"
+        },
+        {
+          "name": "exhausted",
+          "type": "pointer",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_update_probe",
+      "address": "0007a330",
+      "source": "src/network_observer_probe_update.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_finish_cycle",
+      "address": "00079480",
+      "source": "src/network_observer_cycle.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_commit_bandwidth",
+      "address": "00079260",
+      "source": "src/network_observer_bandwidth_update.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_compare_priority",
+      "address": "00078a90",
+      "source": "src/network_observer_sort.c",
+      "stack_purge": 12,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "left",
+          "type": "uint32",
+          "storage": "stack:4"
+        },
+        {
+          "name": "right",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "priorities",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_sort_u32_small",
+      "address": "0013e0e0",
+      "source": "src/network_observer_sort.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "last",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "first",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "comparator",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "data",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_sort_u32",
+      "address": "0013de30",
+      "source": "src/network_observer_sort.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "first",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "count",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "unused",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "comparator",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "data",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_session_a",
+      "address": "00059670",
+      "source": "src/network_game_session.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_session_b",
+      "address": "000596a0",
+      "source": "src/network_game_session.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_session_selected",
+      "address": "00053c30",
+      "source": "src/network_game_session.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_description",
+      "address": "00053de0",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_selected_id",
+      "address": "00054a20",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_member_mask",
+      "address": "00054b10",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_id_matches",
+      "address": "000549d0",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_member_flags",
+      "address": "00053be0",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_member_flag2",
+      "address": "00053bb0",
+      "source": "src/network_game_queries.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_matching_members",
+      "address": "00054d20",
+      "source": "src/network_game_members.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_member_value",
+      "address": "00055960",
+      "source": "src/network_game_members.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "table",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_peer_mask",
+      "address": "00056990",
+      "source": "src/network_game_peer_mask.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "members",
+          "type": "uint32",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_route_limit",
+      "address": "00054cc0",
+      "source": "src/network_game_route_queries.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_nonselected_id",
+      "address": "00054c70",
+      "source": "src/network_game_route_queries.c",
+      "stack_purge": 0,
+      "returns": "byte",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_selected_peer_mask",
+      "address": "00054ac0",
+      "source": "src/network_game_route_queries.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_select_routes",
+      "address": "00056790",
+      "source": "src/network_game_route_select.c",
+      "stack_purge": 20,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "remaining",
+          "type": "pointer",
+          "storage": "ebx"
+        },
+        {
+          "name": "pending",
+          "type": "pointer",
+          "storage": "edx"
+        },
+        {
+          "name": "allowed",
+          "type": "uint32",
+          "storage": "stack:4"
+        },
+        {
+          "name": "selected",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "reserve",
+          "type": "byte",
+          "storage": "stack:12"
+        },
+        {
+          "name": "local",
+          "type": "uint32",
+          "storage": "stack:16"
+        },
+        {
+          "name": "deferred",
+          "type": "pointer",
+          "storage": "stack:20"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_session_kind",
+      "address": "00054f20",
+      "source": "src/network_game_overlap.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_session_overlap",
+      "address": "00053c70",
+      "source": "src/network_game_overlap.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": []
+    },
+    {
+      "name": "h2_network_game_build_routes",
+      "address": "000565c0",
+      "source": "src/network_game_routes.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "table",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "requested",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_member_routes",
+      "address": "00056590",
+      "source": "src/network_game_member_routes.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "members",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "table",
+          "type": "pointer",
+          "storage": "edi"
+        },
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_game_peer_active",
+      "address": "00054890",
+      "source": "src/network_game_activity.c",
+      "stack_purge": 4,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "peer",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_control_bandwidth",
+      "address": "00078ac0",
+      "source": "src/network_observer_control.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_update_route_mode",
+      "address": "0007a4a0",
+      "source": "src/network_observer_route_mode.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_frame",
+      "address": "00075da0",
+      "source": "src/network_observer_frame.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_replication_mark_changes",
+      "address": "00089710",
+      "source": "src/network_replication_changes.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "manager",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "handle",
+          "type": "uint32",
+          "storage": "edi"
+        },
+        {
+          "name": "mask",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_replication_flush_changes",
+      "address": "0008a090",
+      "source": "src/network_replication_changes.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "table",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_next_component",
+      "address": "000891e0",
+      "source": "src/network_connection_iteration.c",
+      "stack_purge": 4,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "ebx"
+        },
+        {
+          "name": "iterator",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_stamp",
+      "address": "00088d70",
+      "source": "src/network_connection_iteration.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "slot",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_record",
+      "address": "000966d0",
+      "source": "src/network_stream_events.c",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "sequence",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_sequence_queue_advance",
+      "address": "001a4840",
+      "source": "src/network_stream_events.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "queue",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "sequence",
+          "type": "uint32",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_complete_next",
+      "address": "00096b00",
+      "source": "src/network_stream_events.c",
+      "stack_purge": 16,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "edi"
+        },
+        {
+          "name": "kind",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "sequence",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "size",
+          "type": "pointer",
+          "storage": "stack:12"
+        },
+        {
+          "name": "elapsed",
+          "type": "pointer",
+          "storage": "stack:16"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_poll_event",
+      "address": "000965e0",
+      "source": "src/network_stream_events.c",
+      "stack_purge": 12,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "sequence",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "size",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "elapsed",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_retire_next",
+      "address": "00096ce0",
+      "source": "src/network_stream_events.c",
+      "stack_purge": 16,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "force",
+          "type": "byte",
+          "storage": "stack:8"
+        },
+        {
+          "name": "kind",
+          "type": "pointer",
+          "storage": "stack:12"
+        },
+        {
+          "name": "sequence",
+          "type": "pointer",
+          "storage": "stack:16"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_dispatch_events",
+      "address": "00088db0",
+      "source": "src/network_connection_events.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_reserve",
+      "address": "00096510",
+      "source": "src/network_stream_reserve.c",
+      "stack_purge": 4,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "timestamp",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_stream_record_size",
+      "address": "00096810",
+      "source": "src/network_stream_reserve.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "sequence",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "bytes",
+          "type": "uint32",
+          "storage": "edi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_send_packet",
+      "address": "000931a0",
+      "source": "src/network_connection_packet.c",
+      "stack_purge": 16,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "endpoint",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "secondary_size",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "secondary",
+          "type": "pointer",
+          "storage": "stack:12"
+        },
+        {
+          "name": "size_output",
+          "type": "pointer",
+          "storage": "stack:16"
+        }
+      ]
+    },
+    {
+      "name": "h2_format_string_256",
+      "address": "000b66f0",
+      "source": "src/format_string.c",
+      "stack_purge": 0,
+      "returns": "pointer",
+      "parameters": [
+        {
+          "name": "destination",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "format",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ],
+      "variadic": true
+    },
+    {
+      "name": "h2_network_connection_build_packet",
+      "address": "00088980",
+      "source": "src/network_connection_build.c",
+      "stack_purge": 32,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "reserve",
+          "type": "byte",
+          "storage": "al"
+        },
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "fill",
+          "type": "byte",
+          "storage": "stack:12"
+        },
+        {
+          "name": "secondary_size",
+          "type": "uint32",
+          "storage": "stack:16"
+        },
+        {
+          "name": "secondary",
+          "type": "pointer",
+          "storage": "stack:20"
+        },
+        {
+          "name": "accounted_output",
+          "type": "pointer",
+          "storage": "stack:24"
+        },
+        {
+          "name": "primary_output",
+          "type": "pointer",
+          "storage": "stack:28"
+        },
+        {
+          "name": "secondary_output",
+          "type": "pointer",
+          "storage": "stack:32"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_connection_update",
+      "address": "000883c0",
+      "source": "src/network_connection_update.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "connection",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_endpoint_update",
+      "address": "00093090",
+      "source": "src/network_connection_update.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "endpoint",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_tick_join_abort",
+      "address": "000618d0",
+      "source": "src/network_session_timeouts.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_tick_leave",
+      "address": "00061910",
+      "source": "src/network_session_timeouts.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_resend_join",
+      "address": "00062300",
+      "source": "src/network_session_join_retry.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_send_status_request",
+      "address": "00062990",
+      "source": "src/network_session_status.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_begin_connected",
+      "address": "000612c0",
+      "source": "src/network_session_status.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_tick_join",
+      "address": "000617c0",
+      "source": "src/network_session_join.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_message_deferred",
+      "address": "000768b0",
+      "source": "src/network_observer_message_gate.c",
+      "stack_purge": 4,
+      "returns": "byte",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "type",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_observer_defer_message",
+      "address": "00076930",
+      "source": "src/network_observer_message_gate.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "observer",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "index",
+          "type": "uint32",
+          "storage": "eax"
+        },
+        {
+          "name": "type",
+          "type": "uint32",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_build_migration_payload",
+      "address": "00062b70",
+      "source": "src/network_session_migration_payload.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "edx"
+        },
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_begin_migration",
+      "address": "000616e0",
+      "source": "src/network_session_migration_start.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_handle_disconnect",
+      "address": "00062ab0",
+      "source": "src/network_session_disconnect.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_find_peer_identity",
+      "address": "00063ba0",
+      "source": "src/network_session_peer_lookup.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "table",
+          "type": "pointer",
+          "storage": "ecx"
+        },
+        {
+          "name": "identity",
+          "type": "pointer",
+          "storage": "edx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_reset_snapshots",
+      "address": "00060fa0",
+      "source": "src/network_session_snapshot_reset.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "edx"
+        },
+        {
+          "name": "refresh",
+          "type": "byte",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_begin_host",
+      "address": "00061390",
+      "source": "src/network_session_host_entry.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_send_migration_requests",
+      "address": "00062550",
+      "source": "src/network_session_migration_send.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_begin_migration_transition",
+      "address": "00061570",
+      "source": "src/network_session_migration_transition.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "flag",
+          "type": "byte",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_tick_migration",
+      "address": "00061ef0",
+      "source": "src/network_session_migration_update.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_remove_handoff_candidate",
+      "address": "00061950",
+      "source": "src/network_session_handoff_remove.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "peer",
+          "type": "uint32",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_peer_mask_count",
+      "address": "00063ca0",
+      "source": "src/network_peer_mask_count.c",
+      "stack_purge": 0,
+      "returns": "uint32",
+      "parameters": [
+        {
+          "name": "mask",
+          "type": "uint32",
+          "storage": "ecx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_maintain_connections",
+      "address": "00062240",
+      "source": "src/network_session_maintenance.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "edi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_expire_reservations",
+      "address": "00062de0",
+      "source": "src/network_session_reservation_expiry.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_session_evict_peer",
+      "address": "0005fda0",
+      "source": "src/network_session_eviction.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "esi"
+        },
+        {
+          "name": "peer",
+          "type": "uint32",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_peer_changes",
+      "address": "000602b0",
+      "source": "src/network_peer_changes.c",
+      "stack_purge": 8,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "current",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "baseline",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "ebx"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_membership_snapshot",
+      "address": "00060400",
+      "source": "src/network_membership_snapshot.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "session",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "current",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "baseline",
+          "type": "pointer",
+          "storage": "stack:8"
+        },
+        {
+          "name": "output",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_bitstream_write_checked",
+      "address": "001947e0",
+      "source": "src/bitstream_checked.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "value",
+          "type": "uint32",
+          "storage": "ebx"
+        },
+        {
+          "name": "width",
+          "type": "uint32",
+          "storage": "edi"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_parameter_lists_write",
+      "address": "00063690",
+      "source": "src/network_parameter_lists.c",
+      "stack_purge": 8,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "block",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_parameter_record_write",
+      "address": "0007c5a0",
+      "source": "src/network_parameter_record.c",
+      "stack_purge": 4,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "eax"
+        },
+        {
+          "name": "record",
+          "type": "pointer",
+          "storage": "stack:4"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_parameter_block_write",
+      "address": "000b2330",
+      "source": "src/network_parameter_block.c",
+      "stack_purge": 0,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "ebx"
+        },
+        {
+          "name": "block",
+          "type": "pointer",
+          "storage": "eax"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_parameter_variant_write",
+      "address": "0007cc50",
+      "source": "src/network_parameter_variant.c",
+      "stack_purge": 8,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "record",
+          "type": "pointer",
+          "storage": "stack:8"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_membership_encode",
+      "address": "000adef0",
+      "source": "src/network_membership_encode.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "size",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "message",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
+    },
+    {
+      "name": "h2_network_parameters_encode",
+      "address": "000af890",
+      "source": "src/network_parameters_encode.c",
+      "stack_purge": 12,
+      "returns": "void",
+      "parameters": [
+        {
+          "name": "stream",
+          "type": "pointer",
+          "storage": "stack:4"
+        },
+        {
+          "name": "size",
+          "type": "uint32",
+          "storage": "stack:8"
+        },
+        {
+          "name": "message",
+          "type": "pointer",
+          "storage": "stack:12"
+        }
+      ]
     }
   ]
 }

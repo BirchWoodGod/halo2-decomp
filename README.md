@@ -3,10 +3,20 @@
 Initial static analysis of the original Xbox Halo 2 engine as 32-bit x86.
 The focus is gameplay, AI, physics, scripting, objects, and world management.
 Xbox rendering and platform services are dependencies to isolate for a later port.
-290 recovered engine routines build as a native Linux shared library.
+389 recovered engine routines build as a native Linux shared library.
 A native callback dispatcher connects the recovered codecs for message types 0–24.
 The Linux host maps the pinned XBE and runs engine pool and configuration probes.
 There is no runnable game yet, and the rest of the engine remains incomplete.
+
+Current validation: the 382-routine checkpoint passed a 276-report source/build
+hash audit; its process exit code was unavailable after the session ended.
+The main build now includes 389 routines after integrating seven reviewed
+serializers. Their isolated combined build passed 17,408 comparisons, plus 4,096
+composed host-completion comparisons. The expanded main regression is running.
+Handoff ranking/controller previews use a controlled CRT power boundary;
+production math fidelity remains unresolved.
+See [PROGRESS.md](PROGRESS.md) for evidence and remaining work.
+Routine counts are not a percentage of game completion.
 
 This repository contains recovery code, tools, and tests. It does not include
 the Halo 2 executable, game assets, or generated decompiler exports. Supply your
@@ -14,6 +24,13 @@ own matching `default.xbe` locally to run the analysis and differential tests.
 Xita is used as a reference alongside the original executable's instructions;
 the separate Xita runtime experiments are documented in [runtime/xita-linux](runtime/xita-linux/README.md).
 Vendored components retain their license and attribution files.
+
+We also cross-reference [kirklandsig/halo2-decompiled](https://github.com/kirklandsig/halo2-decompiled),
+which targets the same XBE and uses original-compiler matching. The pinned
+comparison in [config/upstream_reference.json](config/upstream_reference.json)
+finds 16 shared routines and 338 upstream-reported game matches outside our
+389-routine catalog. These are references for further recovery, not additional
+locally validated routines. See the upstream comparison section in ENGINE.md.
 
 See [ENGINE.md](ENGINE.md) for the first engine findings, including the shared
 AI/script container layout and its custom x86 register calling convention.
@@ -35,7 +52,7 @@ Hash tables and CRC updates add 1,299 comparisons against original instructions.
 The Linux heap is separately stress-tested for overlap, reuse, exhaustion, and
 coalescing. The suites and native probe repeat with undefined-behavior checks.
 Unicorn is a test dependency only; the library and host do not depend on it.
-The ABI catalogs in `config/` cover all 290 recovered routines.
+The ABI catalogs in `config/` cover all 382 recovered routines.
 
 Run the native host probe directly:
 
@@ -112,7 +129,7 @@ bounded by the initialization loop at `0x00137C20` and shutdown traversal at
 `0x0012B690`. Discovery reports overlap conflicts instead of overwriting other
 function bodies. Other unidentified indirect-call targets remain outstanding.
 
-Existing successful C files are retained, except the 290 annotated engine
+Existing successful C files are retained, except the 358 annotated engine
 functions and their direct callers, which are refreshed. Remove a function's C file before
 resuming if its Ghidra types, names, or body have changed and need re-exporting.
 Do not run headless scripts while the same project is open in the GUI.
@@ -223,3 +240,18 @@ Tool source: https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidr
 Run `python3 scripts/audit-startup.py` after preparation to inventory unrecovered
 subsystem entrypoints. Catalogued routines can still depend on unrecovered code;
 this report does not measure the percentage of a working game.
+
+## License
+
+The recovery code, headers, configuration, tests, tools and documentation in
+this repository are dedicated to the public domain under
+[CC0 1.0](LICENSE), the same terms as
+[kirklandsig/halo2-decompiled](https://github.com/kirklandsig/halo2-decompiled)
+and the Halo CE decompilation. Take whatever helps.
+
+Two vendored parts keep their own license, GPL-3.0, in their folders:
+`scripts/vendor/` (Xita tooling, `LICENSE.xboxvita`) and `runtime/xita-linux/`
+(`COPYING`). The engine library and host in `src/` do not depend on them.
+
+Halo 2 and its executable, maps and other content belong to Microsoft and are
+not included.

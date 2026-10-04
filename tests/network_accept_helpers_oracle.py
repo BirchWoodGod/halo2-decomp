@@ -28,7 +28,7 @@ def suite(h):
         h.call('address-equal',0x7af80,dict(ebx=a),[second,port],lambda:equal(h.memory,a,second,port),mask=255)
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--library',default='build/libhalo2_accept_helpers_preview.so');p.add_argument('--report',default='analysis/network-accept-helpers-preview.json');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--library',default='build/libhalo2_engine.so');p.add_argument('--report',default='analysis/network-accept-helpers-tests.json');args=p.parse_args()
     library=(ROOT/args.library).resolve();h=Harness(library)
     try:suite(h)
     finally:h.close()

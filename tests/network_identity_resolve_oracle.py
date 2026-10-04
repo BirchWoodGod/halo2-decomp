@@ -49,7 +49,7 @@ def suite(h):
     assert calls>0
     return calls
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--library',default='build/libhalo2_identity_resolve_preview.so');p.add_argument('--report',default='analysis/network-identity-resolve-preview.json');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--library',default='build/libhalo2_engine.so');p.add_argument('--report',default='analysis/network-identity-resolve-tests.json');args=p.parse_args()
     library=(ROOT/args.library).resolve();h=Harness(library)
     try:calls=suite(h)
     finally:h.close()

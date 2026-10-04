@@ -36,6 +36,70 @@ cmake --build build
 "$python_bin" tests/async_task_create_oracle.py
 "$python_bin" tests/async_task_result_oracle.py
 "$python_bin" tests/network_observer_async_oracle.py
+"$python_bin" tests/network_accept_helpers_oracle.py
+"$python_bin" tests/network_identity_resolve_oracle.py
+"$python_bin" tests/network_connection_accept_oracle.py
+"$python_bin" tests/network_observer_request_oracle.py
+"$python_bin" tests/network_observer_rebuild_oracle.py
+"$python_bin" tests/network_observer_metrics_oracle.py
+"$python_bin" tests/network_observer_bandwidth_allocate_oracle.py
+"$python_bin" tests/network_observer_probe_oracle.py
+"$python_bin" tests/network_observer_reduce_oracle.py
+"$python_bin" tests/network_observer_probe_result_oracle.py
+"$python_bin" tests/network_observer_probe_start_oracle.py
+"$python_bin" tests/network_observer_probe_update_oracle.py
+"$python_bin" tests/network_observer_cycle_oracle.py
+"$python_bin" tests/network_observer_bandwidth_update_oracle.py
+"$python_bin" tests/network_observer_sort_oracle.py
+"$python_bin" tests/network_game_session_oracle.py
+"$python_bin" tests/network_game_queries_oracle.py
+"$python_bin" tests/network_game_members_oracle.py
+"$python_bin" tests/network_game_peer_mask_oracle.py
+"$python_bin" tests/network_game_route_queries_oracle.py
+"$python_bin" tests/network_game_route_select_oracle.py
+"$python_bin" tests/network_game_overlap_oracle.py
+"$python_bin" tests/network_game_routes_oracle.py
+"$python_bin" tests/network_game_member_routes_oracle.py
+"$python_bin" tests/network_game_activity_oracle.py
+"$python_bin" tests/network_observer_control_oracle.py
+"$python_bin" tests/network_observer_route_mode_oracle.py
+"$python_bin" tests/network_observer_frame_oracle.py
+"$python_bin" tests/network_replication_changes_oracle.py
+"$python_bin" tests/network_connection_iteration_oracle.py
+"$python_bin" tests/network_stream_events_oracle.py
+"$python_bin" tests/network_connection_events_oracle.py
+"$python_bin" tests/network_stream_reserve_oracle.py
+"$python_bin" tests/network_connection_packet_oracle.py
+"$python_bin" tests/network_connection_build_oracle.py
+"$python_bin" tests/network_connection_update_oracle.py
+"$python_bin" tests/network_session_maintenance_oracle.py
+"$python_bin" tests/network_session_reservation_expiry_oracle.py
+"$python_bin" tests/network_session_eviction_oracle.py
+"$python_bin" tests/network_peer_changes_oracle.py
+"$python_bin" tests/network_membership_snapshot_oracle.py
+"$python_bin" tests/bitstream_checked_oracle.py
+"$python_bin" tests/network_parameter_lists_oracle.py
+"$python_bin" tests/network_parameter_record_oracle.py
+"$python_bin" tests/network_parameter_block_oracle.py
+"$python_bin" tests/network_parameter_variant_oracle.py
+"$python_bin" tests/network_membership_encode_oracle.py
+"$python_bin" tests/network_parameters_encode_oracle.py
+"$python_bin" tests/network_session_disconnect_oracle.py
+"$python_bin" tests/network_session_peer_lookup_oracle.py
+"$python_bin" tests/network_session_snapshot_reset_oracle.py
+"$python_bin" tests/network_session_host_entry_oracle.py
+"$python_bin" tests/network_session_migration_send_oracle.py
+"$python_bin" tests/network_session_migration_transition_oracle.py
+"$python_bin" tests/network_session_migration_update_oracle.py
+"$python_bin" tests/network_session_handoff_remove_oracle.py
+"$python_bin" tests/network_peer_mask_count_oracle.py
+"$python_bin" tests/network_session_timeouts_oracle.py
+"$python_bin" tests/network_observer_message_gate_oracle.py
+"$python_bin" tests/network_session_join_retry_oracle.py
+"$python_bin" tests/network_session_status_oracle.py
+"$python_bin" tests/network_session_join_oracle.py
+"$python_bin" tests/network_session_migration_payload_oracle.py
+"$python_bin" tests/network_session_migration_start_oracle.py
 "$python_bin" tests/network_observer_poll_oracle.py
 "$python_bin" tests/network_observer_bandwidth_oracle.py
 "$python_bin" tests/network_observer_measurement_oracle.py
@@ -160,6 +224,70 @@ build/ubsan/halo2-engine-host --probe-pools default.xbe
 "$python_bin" tests/async_task_create_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/async-task-create-tests-ubsan.json
 "$python_bin" tests/async_task_result_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/async-task-result-tests-ubsan.json
 "$python_bin" tests/network_observer_async_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-async-tests-ubsan.json
+"$python_bin" tests/network_accept_helpers_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-accept-helpers-tests-ubsan.json
+"$python_bin" tests/network_identity_resolve_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-identity-resolve-tests-ubsan.json
+"$python_bin" tests/network_connection_accept_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-accept-tests-ubsan.json
+"$python_bin" tests/network_observer_request_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-request-tests-ubsan.json
+"$python_bin" tests/network_observer_rebuild_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-rebuild-tests-ubsan.json
+"$python_bin" tests/network_observer_metrics_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-metrics-tests-ubsan.json
+"$python_bin" tests/network_observer_bandwidth_allocate_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-bandwidth-allocate-tests-ubsan.json
+"$python_bin" tests/network_observer_probe_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-probe-tests-ubsan.json
+"$python_bin" tests/network_observer_reduce_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-reduce-tests-ubsan.json
+"$python_bin" tests/network_observer_probe_result_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-probe-result-tests-ubsan.json
+"$python_bin" tests/network_observer_probe_start_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-probe-start-tests-ubsan.json
+"$python_bin" tests/network_observer_probe_update_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-probe-update-tests-ubsan.json
+"$python_bin" tests/network_observer_cycle_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-cycle-tests-ubsan.json
+"$python_bin" tests/network_observer_bandwidth_update_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-bandwidth-update-tests-ubsan.json
+"$python_bin" tests/network_observer_sort_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-sort-tests-ubsan.json
+"$python_bin" tests/network_game_session_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-session-tests-ubsan.json
+"$python_bin" tests/network_game_queries_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-queries-tests-ubsan.json
+"$python_bin" tests/network_game_members_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-members-tests-ubsan.json
+"$python_bin" tests/network_game_peer_mask_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-peer-mask-tests-ubsan.json
+"$python_bin" tests/network_game_route_queries_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-route-queries-tests-ubsan.json
+"$python_bin" tests/network_game_route_select_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-route-select-tests-ubsan.json
+"$python_bin" tests/network_game_overlap_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-overlap-tests-ubsan.json
+"$python_bin" tests/network_game_routes_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-routes-tests-ubsan.json
+"$python_bin" tests/network_game_member_routes_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-member-routes-tests-ubsan.json
+"$python_bin" tests/network_game_activity_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-game-activity-tests-ubsan.json
+"$python_bin" tests/network_observer_control_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-control-tests-ubsan.json
+"$python_bin" tests/network_observer_route_mode_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-route-mode-tests-ubsan.json
+"$python_bin" tests/network_observer_frame_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-frame-tests-ubsan.json
+"$python_bin" tests/network_replication_changes_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-replication-changes-tests-ubsan.json
+"$python_bin" tests/network_connection_iteration_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-iteration-tests-ubsan.json
+"$python_bin" tests/network_stream_events_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-stream-events-tests-ubsan.json
+"$python_bin" tests/network_connection_events_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-events-tests-ubsan.json
+"$python_bin" tests/network_stream_reserve_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-stream-reserve-tests-ubsan.json
+"$python_bin" tests/network_connection_packet_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-packet-tests-ubsan.json
+"$python_bin" tests/network_connection_build_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-build-tests-ubsan.json
+"$python_bin" tests/network_connection_update_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-connection-update-tests-ubsan.json
+"$python_bin" tests/network_session_maintenance_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-maintenance-tests-ubsan.json
+"$python_bin" tests/network_session_reservation_expiry_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-reservation-expiry-tests-ubsan.json
+"$python_bin" tests/network_session_eviction_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-eviction-tests-ubsan.json
+"$python_bin" tests/network_peer_changes_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-peer-changes-tests-ubsan.json
+"$python_bin" tests/network_membership_snapshot_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-membership-snapshot-tests-ubsan.json
+"$python_bin" tests/bitstream_checked_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/bitstream-checked-tests-ubsan.json
+"$python_bin" tests/network_parameter_lists_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-parameter-lists-tests-ubsan.json
+"$python_bin" tests/network_parameter_record_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-parameter-record-tests-ubsan.json
+"$python_bin" tests/network_parameter_block_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-parameter-block-tests-ubsan.json
+"$python_bin" tests/network_parameter_variant_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-parameter-variant-tests-ubsan.json
+"$python_bin" tests/network_membership_encode_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-membership-encode-tests-ubsan.json
+"$python_bin" tests/network_parameters_encode_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-parameters-encode-tests-ubsan.json
+"$python_bin" tests/network_session_disconnect_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-disconnect-tests-ubsan.json
+"$python_bin" tests/network_session_peer_lookup_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-peer-lookup-tests-ubsan.json
+"$python_bin" tests/network_session_snapshot_reset_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-snapshot-reset-tests-ubsan.json
+"$python_bin" tests/network_session_host_entry_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-host-entry-tests-ubsan.json
+"$python_bin" tests/network_session_migration_send_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-migration-send-tests-ubsan.json
+"$python_bin" tests/network_session_migration_transition_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-migration-transition-tests-ubsan.json
+"$python_bin" tests/network_session_migration_update_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-migration-update-tests-ubsan.json
+"$python_bin" tests/network_session_handoff_remove_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-handoff-remove-tests-ubsan.json
+"$python_bin" tests/network_peer_mask_count_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-peer-mask-count-tests-ubsan.json
+"$python_bin" tests/network_session_timeouts_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-timeouts-tests-ubsan.json
+"$python_bin" tests/network_observer_message_gate_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-message-gate-tests-ubsan.json
+"$python_bin" tests/network_session_join_retry_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-join-retry-tests-ubsan.json
+"$python_bin" tests/network_session_status_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-status-tests-ubsan.json
+"$python_bin" tests/network_session_join_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-join-tests-ubsan.json
+"$python_bin" tests/network_session_migration_payload_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-migration-payload-tests-ubsan.json
+"$python_bin" tests/network_session_migration_start_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-session-migration-start-tests-ubsan.json
 "$python_bin" tests/network_observer_poll_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-poll-tests-ubsan.json
 "$python_bin" tests/network_observer_bandwidth_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-bandwidth-tests-ubsan.json
 "$python_bin" tests/network_observer_measurement_oracle.py --library build/ubsan/libhalo2_engine.so --report analysis/network-observer-measurement-tests-ubsan.json

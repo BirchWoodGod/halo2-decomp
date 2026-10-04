@@ -1,0 +1,219 @@
+{
+  "upstream_repository": "https://github.com/kirklandsig/halo2-decompiled",
+  "upstream_commit": "090949182810ffc5d4b78e804fdee45898494367",
+  "target_xbe_sha256": "03215919bb7163259257d361f4c7bf802a7ab12aa85e2689436369b5c427935d",
+  "scope": "Address cross-reference only. Upstream match claims have not been reproduced. Catalog membership is not whole-game validation; call lists omit indirect dependencies. Caller must supply an inventory for the pinned target XBE.",
+  "local_routines": 389,
+  "upstream_rows": 19509,
+  "upstream_reported_matches": 354,
+  "shared_reported_matches": [
+    {
+      "address": "000b4d50",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_0b49a0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 80,
+      "local_name": "h2_network_socket_create",
+      "local_source": "src/network_socket.c"
+    },
+    {
+      "address": "00123d40",
+      "upstream_status": "matched",
+      "upstream_source": "src/game_state.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 61,
+      "local_name": "h2_arena_reserve",
+      "local_source": "src/arena.c"
+    },
+    {
+      "address": "001368f0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_1367d0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 118,
+      "local_name": "h2_file_exists",
+      "local_source": "src/file_io.c"
+    },
+    {
+      "address": "00136bb0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_1367d0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 50,
+      "local_name": "h2_file_close",
+      "local_source": "src/file_io.c"
+    },
+    {
+      "address": "00136bf0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_1367d0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 73,
+      "local_name": "h2_file_seek",
+      "local_source": "src/file_io.c"
+    },
+    {
+      "address": "00136ca0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_1367d0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 95,
+      "local_name": "h2_file_read",
+      "local_source": "src/file_io.c"
+    },
+    {
+      "address": "00136d00",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_1367d0.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 74,
+      "local_name": "h2_file_write",
+      "local_source": "src/file_io.c"
+    },
+    {
+      "address": "00137320",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_137320.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 72,
+      "local_name": "h2_file_path_append",
+      "local_source": "src/file_path.c"
+    },
+    {
+      "address": "001373c0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_137320.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 52,
+      "local_name": "h2_file_path_parent",
+      "local_source": "src/file_path.c"
+    },
+    {
+      "address": "001374c0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_137320.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 143,
+      "local_name": "h2_file_path_resolve",
+      "local_source": "src/file_path.c"
+    },
+    {
+      "address": "0013e2d0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_13e210.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 71,
+      "local_name": "h2_hash_find",
+      "local_source": "src/hash_table.c"
+    },
+    {
+      "address": "001405a0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_13fd90.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 163,
+      "local_name": "h2_text_encode_character",
+      "local_source": "src/text_codec.c"
+    },
+    {
+      "address": "001462b0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 35,
+      "local_name": "h2_random_generate_seed",
+      "local_source": "src/random.c"
+    },
+    {
+      "address": "001462e0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 62,
+      "local_name": "h2_random_direction",
+      "local_source": "src/random.c"
+    },
+    {
+      "address": "00163ba0",
+      "upstream_status": "matched",
+      "upstream_source": "src/crc.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 84,
+      "local_name": "h2_crc_update",
+      "local_source": "src/crc.c"
+    },
+    {
+      "address": "00163c00",
+      "upstream_status": "matched",
+      "upstream_source": "src/crc.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 53,
+      "local_name": "h2_crc_table_initialize",
+      "local_source": "src/crc.c"
+    }
+  ],
+  "upstream_inventory_blob": "6847cec127134e2e3470995450b6906ebcb07522",
+  "upstream_inventory_sha256": "658f077e8eda4d2b3ed3a2d1a5c4dab5654ccf8d8214587e819f08d3cd01ada3",
+  "upstream_game_candidates_count": 338,
+  "local_without_upstream_match_count": 373,
+  "local_missing_from_upstream": [],
+  "selected_math_references": [
+    {
+      "address": "00146650",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 9,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "00146610",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 18,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "00146630",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 29,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "0003ea30",
+      "upstream_status": "matched",
+      "upstream_source": "src/real_math.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 41,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "000259d0",
+      "upstream_status": "matched",
+      "upstream_source": "src/real_math.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 59,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "001465b0",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 85,
+      "callees_outside_local_catalog": []
+    },
+    {
+      "address": "00146550",
+      "upstream_status": "matched",
+      "upstream_source": "src/unknown_146240.cpp",
+      "upstream_owner": "game",
+      "upstream_size": 90,
+      "callees_outside_local_catalog": []
+    }
+  ],
+  "attribution": "kirklandsig/halo2-decompiled: CC0-1.0. Its inventory name/object fields derive from tinkerer-red/halo-symbol-atlas (CC BY 4.0); those fields are omitted here."
+}

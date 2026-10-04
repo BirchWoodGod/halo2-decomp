@@ -2744,3 +2744,172 @@ regression and annotation refresh are tracked in PROGRESS.md.
 Task creation (`0007b4c0`), task-result decoding (`0007b7b0`), and observer asynchronous maintenance (`00077480`) bring the native catalog to 283 routines. Xita translations corroborate the original instruction flow. Creation preserves signed count clamping, default-option tables, three guest pointer arrays, SDK failure handling, actual pool allocation and cleanup. Result decoding preserves output aliasing and instruction order. Observer maintenance selects a consumer, creates or polls a task, records results and releases completed tasks. SDK create/release are explicit platform boundaries; per-invocation temporary guest memory must be disjoint from engine allocations. The observer oracle executes actual recovered engine callees, including allocation/deletion, and covers 83 create-then-complete sequences. These routines do not provide a live SDK task service.
 
 Observer polling, bandwidth updating, measurement recording and four rate helpers bring the catalog to290 routines. Xita translations and original instructions establish the float/XMM calling conventions where raw pseudocode omitted arguments or results. Differential tests compare full memory, clock snapshots, exact XMM0 result bits and integer results, including counter/clock wraparound, arithmetic shifts, NaNs, infinities and rounded conversion overflow. These floating calculations currently assume the default nearest-even environment; contraction is disabled and libm provides rounding. SDK clock and consumer callbacks remain platform boundaries. This does not supply a complete observer update loop or playable engine.
+
+Connection flag validation (000880b0), current-address copying (00075930), address comparison (0007af80), and identity resolution (0007ab60) bring the catalog to294 routines. Xita and original-instruction comparisons establish flag exclusions, signed address lengths, ordered overlapping copies, direct IPv4 identities, registration-table matching and optional/overlapping output behavior. The identity resolver invokes the actual recovered registered-IPv4 extractor; SDK003cd32d remains a platform boundary with disjoint32-byte temporary guest storage. These are dependencies of incoming-request handling, not the complete handler.
+
+Connection accept (00088360) and accept-response sending (00089180) bring the native catalog to 296 routines. Original-XBE comparisons cover state-3 transitions, six timer resets, callback-driven flag/state changes, ordinary writer and reliable storage queues, actual connection codecs, full memory and temporary message/storage contents. Release and UBSan integrated suites each pass 768 comparisons. Clock and storage-provider callbacks remain controlled platform boundaries; the suite uses a fresh writer and does not cover live socket flushes. Xita keeps 89180 as an inline label inside f_00088360; both entry points have separately reviewed ABI entries. The incoming-request handler at 000785d0 remains unrecovered.
+
+Incoming request handling (000785d0) and rebuilding active observer connections (00078900) bring the catalog to298 routines. The request handler composes validation, identity/slot matching, close/reopen, route insertion, timer/stream reset, queued storage cleanup, ordinary/reliable acceptance, and observer state updates. Its preview passes2,048 comparisons per build. Rebuild iterates fifteen slots, formats peer labels, allocates replacement connections and runs refresh/update/tick;256 preview comparisons exercise999 allocation sequences per build, including exhaustion and callback activation of a later slot. CRT formatting and external SDK/events remain controlled boundaries; live socket I/O is outside these composition suites. Xita keeps78900 inline inside f_00081780. These routines do not complete game boot.
+
+Eight bandwidth routines bring the catalog to306: metrics query78a10, rate setter79600, allocation78e60, reset79d90, restore7a110, priority7a2a0, peer selection79a10 and reduction79c00. Original-XBE comparisons exercise real recovered callees, signed/wrapped arithmetic, output aliases, callback mutations, saved/pending rates and redistribution. Priority returns float in XMM0; rate setting takes XMM5. Pending reduction preserves the original integer truncation of the selected float rate. Preview Release/UBSan suites each pass8,192 comparisons. Floating checks currently assume default rounding; integer division faults are outside these arithmetic suites. Complete observer update, game boot and gameplay are still unfinished.
+
+### Probe lifecycle integration (312 routines)
+
+The native library now includes counter measurements `00079560`/`000795b0`,
+probe failure `0007a160`, result evaluation `0007a1c0`, initiation `00079de0`,
+and per-slot controller `0007a330`. The controller composes the actual recovered
+start/result/restore/reduce/reset routines. Its extra native scratch argument is
+a disjoint guest byte replacing the original stack-local exhausted flag.
+Xita translations corroborate the original instruction review; original-XBE
+execution remains the behavior oracle. Preview suites passed normal and UBSan
+checks; the integrated 312-routine regression must pass separately. Default
+floating environment and valid integer divisors delimit these fixtures.
+
+### Observer and game-session dependency integration (332 routines)
+
+Twenty validated previews now join the main library: observer cycle finalization,
+bandwidth commit, priority comparison and two sorts; session selection, descriptor,
+ID and member queries; member filtering, peer-mask conversion and routing queries.
+The newly integrated `00079260` uses `h2_network_observer_commit_bandwidth` to avoid
+colliding with the existing `h2_network_observer_update_bandwidth` symbol.
+Guest scratch parameters replace original stack-local session outputs and must
+remain disjoint from persistent state. The ABI catalog describes original
+register/stack arguments, excluding these native scratch parameters. Sorting
+validation includes original comparator order with ties and quiet NaNs; it does
+not establish arbitrary comparator behavior. The last audited checkpoint is 312;
+the expanded 332 build requires its own full regression.
+
+
+The 332-routine checkpoint is now fully audited (202 reports, current source and
+binary hashes), recorded in `analysis/engine-checkpoint-332.json`. The main build
+has since advanced to 341 routines by integrating game routing/activity and the
+observer controller, route-mode finalizer and frame. `h2_observer_frame_context`
+combines the existing tick context, async creation platform and controller
+callbacks, with separate 60-byte records and 152-byte controller scratch.
+The original `00075da0` has only one stack argument: the observer pointer.
+
+Frame tests execute original Xbox instructions and actual recovered engine
+callees. Waiting/release cases and the expanded bandwidth-controller fixtures
+passed in Release and UBSan preview builds. They do not yet establish async task
+work or connection transitions through the frame, estimator/controller interplay
+outside the tested cooldown, live networking, rendering or playable Linux Halo 2.
+The 341 build still needs its complete regression audit.
+
+
+The next enclosing update is `0008dfc0`, called from `0012b450`, `0012b6f0` and
+`00163890`. Its missing branches are session update `0005a090`, replication flush
+`0008a090`, and endpoint update `00093090`. The latter delegates each connection
+to `000883c0` and handles deferred close reason 9. Replication flush is now a
+validated preview; session update and connection update remain incomplete.
+
+Connection update `000883c0` uses recovered handshake/close plus component
+iterator `000891e0` and timestamp writer `00088d70` (new previews). Still missing
+are packet construction `00088980` and stream-event dispatch `00088db0`.
+The latter's stream dependencies `000965e0` and `00096ce0`, with helpers
+`00096b00`, `000966d0`, `001a4840`, are now validated previews. Next work can
+compose `00088db0` with these actual callees and virtual callbacks, then recover
+`00088980` and compose the full connection/endpoint update. That still leaves
+the larger session update before `0008dfc0` is implementable without stubs.
+
+Change-mask, iterator, timestamp and stream-event preview tests compare full
+persistent memory with original execution. Virtual implementations and SDK clocks
+are controlled; replacement stack scratch is explicitly excluded where used.
+These tests establish routine behavior within their fixtures, not live networking
+or gameplay. Main integration remains 341 routines pending its full regression.
+
+
+The 341-routine full checkpoint is now audited against 218 report files and
+current binary/source hashes. The build has advanced to 353 routines, integrating
+all twelve networking additions through `00088db0` event dispatch and stream
+reservation/accounting `00096510`/`00096810`. Dispatcher scratch is 76 bytes:
+72 original local bytes plus a nested poll result word. The original 72 bytes
+are compared directly, including unspecified upper bytes of boolean argument
+words; this preserves callback-visible state without inventing zeroed padding.
+The dispatcher requires default nearest-even floating rounding and valid queues.
+
+Next missing connection-update callee: `00088980`, which composes recovered
+bitstream writers, component iteration and stream reservation/accounting with
+endpoint packet assembly `000931a0`. Recover that assembly routine and the packet
+construction call path before claiming the outer connection update is complete.
+The 353 integration still needs its own full regression audit.
+
+The353 checkpoint subsequently passed all228 report/source/binary hash checks.
+The packet assembler931a0, builder88980, bounded formatterb66f0, connection
+update883c0 and endpoint update93090 are now integrated, bringing the catalog to
+358. Their11,264 preintegration comparisons exercise original engine callees,
+full persistent state, original local frames and controlled virtual/SDK/CRT
+boundaries. Full358 regression is running. The next substantial dependency
+of outer network frame8dfc0 is session update5a090 and its state-specific callees.
+
+The 358-routine checkpoint passed all 234 report/source/binary hash checks.
+Ten additional routines covering join/status/timeouts, message deferral and
+migration entry/payload construction are now integrated, bringing the catalog
+to 368. Their standalone comparisons passed a current dependency/source audit.
+Expanded integrated regression and Ghidra refresh are pending; the main session
+update and outer network frame remain incomplete.
+
+The 368-routine integrated checkpoint passed all 248 report/source/binary hash
+checks. Nine migration/host/handoff support routines are now integrated, bringing
+the catalog to 377 after 18,432 audited standalone comparisons. The expanded
+regression and annotation refresh are running; ranking and remaining session
+controllers still prevent completion of the outer network frame.
+
+
+The 377-routine checkpoint passed its full regression and all 266 report/source/
+build hash checks. Maintenance `00062240`, reservation expiry `00062de0`, and peer
+eviction `0005fda0` are now integrated after 12,288 audited standalone comparisons,
+bringing the native catalog to 380. The expanded full regression is pending.
+Handoff math and snapshot construction still prevent complete session composition.
+# Upstream matching-decompilation reference
+
+The reference snapshot is
+[kirklandsig/halo2-decompiled at 090949182810ffc5d4b78e804fdee45898494367](https://github.com/kirklandsig/halo2-decompiled/tree/090949182810ffc5d4b78e804fdee45898494367).
+Its README identifies the same retail XBE SHA-256 as this project. The fetched
+inventory's Git blob was independently verified as
+`6847cec127134e2e3470995450b6906ebcb07522`.
+
+Comparing that inventory against both local ABI catalogs finds all 389 local
+addresses, 16 shared upstream-reported matches, and 338 upstream-reported game
+matches outside our catalog. The other 373 local entries have no upstream
+`matched` status in this snapshot. These counts describe different evidence:
+our native routines have behavioral tests; their status is a compiler-matching
+claim. Neither count establishes a playable game or whole-game equivalence.
+The upstream compiler build has not been reproduced here.
+
+Useful next reference targets, before importing implementation code:
+
+| Retail address | Upstream source | Use |
+| --- | --- | --- |
+| `000259d0` | `src/real_math.cpp` | Random float range; verify rounding and state updates against original instructions. |
+| `0003ea30` | `src/real_math.cpp` | Distance calculation; upstream preserves squared-term evaluation order. |
+| `00146550`, `001465b0` | `src/unknown_146240.cpp` | Random/math candidates beyond our existing seed and direction routines; inspect bodies and original ABI before recovery. |
+| `00163ba0`, `00163c00` | `src/crc.cpp` | Shared CRC routines for comparing original-compiler matching with our behavioral oracle. |
+
+Upstream `tools/check.py` checks instruction bytes while masking validated
+relocation fields. Its `Identity.ok` permits unresolved unnamed external targets,
+and absolute fields outside the current function are checked for image bounds,
+not full object identity. A reported match therefore remains complementary to
+our memory and callback-order tests. Preserve those tests when using upstream
+source. Xita and original-instruction review remain part of our workflow.
+
+The comparison is reproducible without an SDK or game assets:
+
+```sh
+python3 scripts/compare-upstream-inventory.py /path/to/upstream/config/functions.csv \
+  --upstream-commit 090949182810ffc5d4b78e804fdee45898494367 \
+  --report analysis/upstream-comparison.json
+python3 tests/test_upstream_inventory.py
+```
+
+Use the inventory from that exact commit. The script hashes its inputs and
+separates overlap, external candidates, and local-only coverage. Direct-call
+counts are a prioritization aid; they omit indirect calls and data dependencies.
+`config/upstream_reference.json` preserves the concise comparison for reviewers.
+
+The upstream repository declares CC0-1.0, except its inventory's `name` and
+`object` columns, derived from
+[halo-symbol-atlas](https://github.com/tinkerer-red/halo-symbol-atlas) under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Our comparison omits
+those two columns. No upstream engine source, game assets, or SDK was imported.
+The shared CRC/math routines are a practical starting point for future joint
+validation; no contribution has been sent upstream.
